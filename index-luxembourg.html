@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ SEO META ═══ -->
+<title>Index des Salaires Luxembourg 2026 — Calculateur & Historique STATEC</title>
+<meta name="description" content="Suivez l'index des salaires au Luxembourg (échelle mobile): cotes d'application officielles STATEC, historique complet depuis 1988, calculateur d'impact salarial et prévisions 2026. EN, FR, DE, LB.">
+<meta name="keywords" content="index salaires luxembourg, échelle mobile salaires, tranche indiciaire, STATEC, indexation salaires luxembourg 2026, cote application, calculateur index luxembourgeois, lohnindex luxemburg, wage index luxembourg, indeksatioun lëtzebuerg">
+<meta name="author" content="Index-Luxembourg.lu">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://index-luxembourg.lu/">
+<meta name="language" content="fr,de,en,lb">
+<meta name="geo.region" content="LU">
+<meta name="geo.country" content="Luxembourg">
+
+<!-- ═══ OG / SOCIAL ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_LU">
+<meta property="og:locale:alternate" content="de_LU">
+<meta property="og:locale:alternate" content="en_LU">
+<meta property="og:title" content="Index des Salaires Luxembourg 2026 — STATEC">
+<meta property="og:description" content="Cotes d'application officielles, historique 1988–2026, calculateur d'impact salarial. Prochaine tranche : Q2 2026.">
+<meta property="og:url" content="https://index-luxembourg.lu/">
+<meta property="og:site_name" content="Index Luxembourg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Index des Salaires Luxembourg 2026">
+<meta name="twitter:description" content="Suivez l'index des salaires luxembourgeois: historique STATEC, calculateur et prévisions 2026.">
+
+<!-- ═══ SCHEMA.ORG ═══ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Index des Salaires Luxembourg",
+  "alternateName":["Luxembourg Wage Index","Lohnindex Luxemburg","Indeksatioun Lëtzebuerg"],
+  "description":"Outil de suivi de l'échelle mobile des salaires au Luxembourg — données officielles STATEC, calculateur d'impact salarial, historique depuis 1988.",
+  "url":"https://index-luxembourg.lu/",
+  "applicationCategory":"FinanceApplication",
+  "operatingSystem":"Any",
+  "inLanguage":["fr","de","en","lb"],
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},
+  "about":{
+    "@type":"Thing",
+    "name":"Échelle mobile des salaires Luxembourg",
+    "sameAs":"https://statistiques.public.lu/fr/donnees/themes/economie-finances/dossier-indice-prix-inflation.html"
+  },
+  "publisher":{"@type":"Organization","name":"Index Luxembourg","url":"https://index-luxembourg.lu/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Quand aura lieu la prochaine tranche indiciaire au Luxembourg ?","acceptedAnswer":{"@type":"Answer","text":"Selon les prévisions STATEC du 9 février 2026, la prochaine tranche indiciaire est attendue au 2e trimestre 2026 (scénario central). La cote déclencheuse est fixée à 992,24 points."}},
+    {"@type":"Question","name":"Quel est le montant de la hausse lors d'une tranche indiciaire ?","acceptedAnswer":{"@type":"Answer","text":"Chaque tranche indiciaire entraîne une hausse automatique de 2,5% de tous les salaires, traitements et pensions au Luxembourg, conformément à l'article L.223-1 du Code du Travail."}},
+    {"@type":"Question","name":"Quelle est la cote d'application actuelle de l'index au Luxembourg ?","acceptedAnswer":{"@type":"Answer","text":"La cote d'application actuelle est de 968,04 points (en vigueur depuis le 1er mai 2025). La prochaine cote déclencheuse est fixée à 992,24 points."}},
+    {"@type":"Question","name":"Comment fonctionne l'échelle mobile des salaires au Luxembourg ?","acceptedAnswer":{"@type":"Answer","text":"Le STATEC mesure chaque mois l'IPCN. Lorsque la moyenne semestrielle de l'indice raccordé à la base 1.1.1948 dépasse la cote d'échéance de 2,5%, une nouvelle tranche est déclenchée le mois suivant, augmentant automatiquement tous les salaires de 2,5%."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://index-luxembourg.lu/"},
+    {"@type":"ListItem","position":2,"name":"Calculateur","item":"https://index-luxembourg.lu/#calculateur"},
+    {"@type":"ListItem","position":3,"name":"Historique","item":"https://index-luxembourg.lu/#historique"}
+  ]
+}
+</script>
+
+<!-- ═══ FONTS ═══ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+
+<style>
+:root{
+  --navy:#0f2a56; --navy-deep:#0a1e40; --navy-mid:#1a3a72; --navy-soft:#e8eef8;
+  --navy-pale:#f2f5fb; --navy-ghost:#f7f9fd;
+  --gold:#b8892a; --gold-l:#d4a843; --gold-bg:#fdf6e8; --gold-b:#e8d08a;
+  --text:#0f1c2e; --text-m:#3a4a60; --text-d:#7a8a9e;
+  --border:#dde3ef; --border-m:#c8d0e2;
+  --white:#fff; --green:#1a7a42; --r:14px; --r-lg:20px; --r-sm:8px;
+  --sh:0 4px 20px rgba(15,42,86,.09); --sh-sm:0 1px 4px rgba(15,42,86,.06);
+  --news-bg:#fffbf0; --news-border:#f0c040;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Manrope',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;line-height:1.6}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#f0f2f8}::-webkit-scrollbar-thumb{background:#c0cce0;border-radius:3px}
+
+/* ─ NEWS BANNER ─ */
+/* SET show-news:flex TO ACTIVATE, show-news:none TO HIDE */
+#news-banner{
+  display:flex; /* ← change to 'none' to hide news */
+  align-items:flex-start;gap:14px;
+  background:var(--news-bg);border-bottom:2px solid var(--news-border);
+  padding:.875rem clamp(1.25rem,5vw,3rem);
+  position:relative;z-index:101;
+}
+.news-icon{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--news-border);display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;font-size:16px;
+}
+.news-content{flex:1;min-width:0}
+.news-tag{
+  font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:3px;
+}
+.news-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35}
+.news-sub{font-size:12px;color:var(--text-m);margin-top:2px;line-height:1.5}
+.news-close{
+  background:none;border:none;cursor:pointer;color:var(--text-d);
+  font-size:18px;line-height:1;padding:4px;flex-shrink:0;transition:color .15s;
+}
+.news-close:hover{color:var(--text)}
+
+/* ─ NAV ─ */
+nav{
+  position:sticky;top:0;left:0;right:0;z-index:100;
+  height:64px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(1.25rem,5vw,3rem);
+  background:rgba(255,255,255,.96);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);box-shadow:var(--sh-sm);
+}
+.nav-brand{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Playfair Display',serif;font-size:17px;font-weight:500;
+  color:var(--navy);text-decoration:none;letter-spacing:.01em;
+}
+.nav-badge{
+  width:28px;height:28px;border-radius:7px;background:var(--navy);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.nav-badge svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nl{
+  font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;color:var(--text-m);
+  background:none;border:none;cursor:pointer;padding:6px 12px;border-radius:20px;transition:all .18s;
+}
+.nl:hover{color:var(--navy);background:var(--navy-soft)}
+.nav-sep{display:block;width:1px;height:16px;background:var(--border);margin:0 4px;flex-shrink:0}
+.nav-blog{text-decoration:none;font-weight:600;color:var(--navy) !important}
+.nav-blog:hover{background:var(--navy-soft)}
+.nav-r{display:flex;align-items:center;gap:5px}
+.lb{
+  font-family:'Manrope',sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;
+  color:var(--text-d);background:none;border:1.5px solid transparent;cursor:pointer;
+  padding:4px 9px;border-radius:16px;transition:all .18s;
+}
+.lb:hover{color:var(--navy);border-color:var(--border-m)}
+.lb.active{color:var(--navy);border-color:var(--navy);background:var(--navy-soft)}
+
+/* ─ HERO ─ */
+.hero{
+  min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:90px clamp(1.25rem,6vw,5rem) 80px;
+  background:var(--navy-ghost);position:relative;overflow:hidden;
+}
+.hero-pat{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 55% at 50% 30%,rgba(15,42,86,.05) 0%,transparent 70%),
+    radial-gradient(ellipse 40% 40% at 15% 85%,rgba(184,137,42,.04) 0%,transparent 60%);
+}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);
+  background-size:68px 68px;opacity:.5;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 25%,transparent 100%);
+}
+.hero-c{position:relative;z-index:1;max-width:800px;width:100%}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:1.75rem;
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);
+  padding:6px 16px 6px 8px;border:1.5px solid var(--border-m);border-radius:24px;
+  background:var(--white);box-shadow:var(--sh-sm);
+}
+.hero-tag-d{width:20px;height:20px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hero-tag-d span{width:6px;height:6px;border-radius:50%;background:var(--white);display:block}
+h1.ht{
+  font-family:'Playfair Display',serif;font-size:clamp(44px,8.5vw,92px);
+  font-weight:400;line-height:1.04;letter-spacing:-.015em;color:var(--navy);margin-bottom:1.5rem;
+}
+h1.ht em{font-style:italic;color:var(--gold)}
+.hero-sub{
+  font-size:clamp(15px,1.8vw,17px);color:var(--text-m);
+  max-width:540px;margin:0 auto 3rem;font-weight:300;line-height:1.8;
+}
+.hero-kpis{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  background:var(--border);border:1.5px solid var(--border-m);border-radius:var(--r-lg);
+  overflow:hidden;margin-bottom:2.5rem;box-shadow:var(--sh);
+}
+.kpi{background:var(--white);padding:clamp(1.25rem,3vw,1.875rem) clamp(1rem,2.5vw,1.75rem);text-align:center}
+.kpi+.kpi{border-left:1px solid var(--border)}
+.kv{font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,38px);font-weight:400;color:var(--navy);letter-spacing:-.02em;display:block;margin-bottom:4px}
+.kv.gld{color:var(--gold)}
+.kl{font-size:11px;font-weight:600;color:var(--text-d);text-transform:uppercase;letter-spacing:.1em}
+.hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-n{font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;padding:13px 28px;border-radius:var(--r-sm);background:var(--navy);color:var(--white);border:none;cursor:pointer;transition:all .22s;letter-spacing:.02em}
+.btn-n:hover{background:var(--navy-mid);transform:translateY(-1px);box-shadow:var(--sh)}
+.btn-o{font-family:'Manrope',sans-serif;font-size:14px;font-weight:500;padding:13px 28px;border-radius:var(--r-sm);background:var(--white);color:var(--navy);border:1.5px solid var(--border-m);cursor:pointer;transition:all .22s}
+.btn-o:hover{border-color:var(--navy);box-shadow:var(--sh-sm)}
+.scroll-cue{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:7px;animation:fl 2.5s ease-in-out infinite}
+.scroll-cue span{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-d)}
+.sc-line{width:1px;height:36px;background:linear-gradient(to bottom,var(--border-m),transparent)}
+@keyframes fl{0%,100%{opacity:.5;transform:translateX(-50%) translateY(0)}50%{opacity:1;transform:translateX(-50%) translateY(5px)}}
+
+/* ─ SHARED ─ */
+section{padding:clamp(4rem,8vw,7rem) clamp(1.25rem,6vw,4rem)}
+.si{max-width:1100px;margin:0 auto}
+.slabel{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);margin-bottom:.75rem;display:flex;align-items:center;gap:8px}
+.slabel::before{content:'';width:18px;height:2px;background:var(--gold);border-radius:1px}
+h2.sh{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);font-weight:400;color:var(--navy);line-height:1.15;margin-bottom:.75rem}
+h2.sh em{font-style:italic;color:var(--gold)}
+.sdesc{font-size:15px;color:var(--text-m);max-width:560px;line-height:1.75;font-weight:300}
+
+/* ─ STATUS ─ */
+.status{
+  background:var(--white);border:1.5px solid var(--border-m);border-radius:var(--r);
+  padding:.875rem 1.5rem;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  margin-bottom:2rem;box-shadow:var(--sh-sm);
+}
+.live{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--navy)}
+.dp{width:8px;height:8px;border-radius:50%;background:#22c55e;position:relative;flex-shrink:0}
+.dp::after{content:'';position:absolute;inset:-3px;border-radius:50%;background:rgba(34,197,94,.25);animation:pu 2s ease-out infinite}
+@keyframes pu{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(2.4)}}
+.ss{width:1px;height:14px;background:var(--border);flex-shrink:0}
+.si2{font-size:13px;color:var(--text-m)}
+.si2 strong{color:var(--navy);font-weight:600}
+
+/* ─ CHART ─ */
+.chart-sec{background:var(--navy-pale)}
+.chart-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:clamp(1.25rem,3vw,2rem);box-shadow:var(--sh)}
+.chart-tb{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:.75rem}
+.chart-info{font-size:12px;color:var(--text-d)}
+.cff{display:flex;gap:6px}
+.cf{font-family:'Manrope',sans-serif;font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;border:1.5px solid var(--border);background:transparent;color:var(--text-m);cursor:pointer;transition:all .18s}
+.cf:hover{border-color:var(--navy);color:var(--navy)}
+.cf.active{background:var(--navy);border-color:var(--navy);color:var(--white)}
+.chart-wrap{position:relative;width:100%;height:clamp(240px,32vw,360px)}
+
+/* ─ HOW ─ */
+.how-sec{background:var(--white)}
+.how-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-top:2.5rem}
+.how-c{border:1.5px solid var(--border);border-radius:var(--r);padding:1.75rem 1.5rem;background:var(--white);transition:all .25s;position:relative;overflow:hidden}
+.how-c::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--navy-mid));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.how-c:hover{box-shadow:var(--sh);border-color:var(--border-m);transform:translateY(-2px)}
+.how-c:hover::after{transform:scaleX(1)}
+.hn{font-family:'Playfair Display',serif;font-size:42px;font-weight:400;color:var(--navy-soft);line-height:1;margin-bottom:1rem}
+.ht2{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+.hb{font-size:13px;color:var(--text-m);line-height:1.75;font-weight:300}
+
+/* ─ CALC ─ */
+.calc-sec{background:var(--navy-pale)}
+.calc-lay{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem;align-items:start;margin-top:2.5rem}
+.cform{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:clamp(1.5rem,3vw,2.25rem);box-shadow:var(--sh)}
+.fg{margin-bottom:1.375rem}
+label.fl{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:7px}
+.fi,.fs{width:100%;padding:11px 15px;font-family:'Manrope',sans-serif;font-size:15px;font-weight:400;color:var(--text);background:var(--navy-ghost);border:1.5px solid var(--border);border-radius:var(--r-sm);outline:none;transition:border-color .18s}
+.fi:focus,.fs:focus{border-color:var(--navy);background:var(--white)}
+.fs{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230f2a56' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:11px;padding-right:36px}
+.fs option{background:var(--white)}
+.sb{margin-bottom:1.375rem}
+.sh2{display:flex;justify-content:space-between;margin-bottom:7px}
+.sh2 span{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy)}
+.sh2 strong{font-size:13px;font-weight:600;color:var(--navy)}
+input[type=range]{width:100%;height:4px;border-radius:2px;outline:none;-webkit-appearance:none;cursor:pointer;background:linear-gradient(90deg,var(--navy) calc(var(--pct,0%)),var(--border) 0)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--navy);border:2.5px solid var(--white);box-shadow:0 0 0 3px rgba(15,42,86,.15)}
+.calc-btn{width:100%;font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;padding:13px;border-radius:var(--r-sm);background:var(--navy);color:var(--white);border:none;cursor:pointer;transition:all .22s;letter-spacing:.02em;margin-top:.5rem}
+.calc-btn:hover{background:var(--navy-mid);transform:translateY(-1px);box-shadow:var(--sh)}
+.rpanel{background:var(--white);border:1.5px solid var(--border-m);border-radius:var(--r-lg);padding:clamp(1.5rem,3vw,2.25rem);box-shadow:var(--sh)}
+.rph{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-d);margin-bottom:1.5rem;display:flex;align-items:center;gap:8px}
+.rph::before{content:'';width:14px;height:2px;background:var(--gold);border-radius:1px}
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:.875rem;margin-bottom:.875rem}
+.ri{background:var(--navy-ghost);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.25rem 1rem}
+.ri.acc{background:var(--navy);border-color:var(--navy)}
+.ri.gbg{background:var(--gold-bg);border-color:var(--gold-b)}
+.ri.full{grid-column:1/-1}
+.rl{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-d);margin-bottom:5px}
+.ri.acc .rl{color:rgba(255,255,255,.55)}
+.ri.gbg .rl{color:var(--gold)}
+.rv{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:var(--navy);line-height:1.1}
+.ri.acc .rv{color:var(--white)}
+.rv.grn{color:var(--green)}
+.rnote{font-size:11px;color:var(--text-d);line-height:1.7;border-top:1px solid var(--border);padding-top:.875rem;margin-top:.875rem}
+
+/* ─ HISTORY ─ */
+.hist-sec{background:var(--white)}
+.hw{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-sm);margin-top:2rem}
+.hs{overflow-x:auto;max-height:520px;overflow-y:auto}
+table{width:100%;border-collapse:collapse}
+thead{position:sticky;top:0;z-index:2}
+th{background:var(--navy);padding:11px 18px;text-align:left;font-family:'Manrope',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);border-right:1px solid rgba(255,255,255,.08);white-space:nowrap}
+th:last-child{border-right:none}
+td{padding:12px 18px;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-m);white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:var(--navy-ghost);color:var(--text)}
+.ibadge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;background:var(--navy-soft);color:var(--navy);border:1px solid var(--border-m)}
+.rr td{font-weight:500;color:var(--text)}
+.rr td:first-child{border-left:3px solid var(--navy)}
+.src-strip{background:var(--navy-ghost);border-top:1px solid var(--border);padding:.875rem 1.5rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sbadge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:20px;background:var(--white);border:1px solid var(--border-m);font-size:11px;font-weight:600;color:var(--navy)}
+.sbadge-d{width:5px;height:5px;border-radius:50%;background:var(--navy);flex-shrink:0}
+.src-t{font-size:11px;color:var(--text-d)}
+
+/* ─ FAQ ─ */
+.faq-sec{background:var(--navy-pale)}
+.faq-g{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:2rem}
+.faq-i{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:1.5rem;cursor:pointer;transition:all .2s;position:relative}
+.faq-i:hover{border-color:var(--border-m);box-shadow:var(--sh-sm)}
+.faq-q{font-size:14px;font-weight:600;color:var(--navy);padding-right:2rem;line-height:1.4;margin-bottom:0}
+.faq-a{font-size:13px;color:var(--text-m);line-height:1.7;font-weight:300;margin-top:.75rem;display:none}
+.faq-i.open .faq-a{display:block}
+.faq-tog{position:absolute;top:1.25rem;right:1.25rem;width:22px;height:22px;border-radius:50%;background:var(--navy-soft);display:flex;align-items:center;justify-content:center;transition:all .2s;font-size:14px;color:var(--navy);font-weight:600}
+.faq-i.open .faq-tog{background:var(--navy);color:var(--white);transform:rotate(45deg)}
+
+/* ─ FOOTER ─ */
+footer{background:var(--navy);padding:2.5rem clamp(1.25rem,6vw,4rem)}
+.fi3{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.25rem}
+.fb{font-family:'Playfair Display',serif;font-size:18px;color:rgba(255,255,255,.85);font-weight:400}
+.fr{text-align:right}
+.fsrc{font-size:12px;color:rgba(255,255,255,.45);line-height:1.8}
+
+/* ─ RESPONSIVE ─ */
+@media(max-width:760px){
+  .nav-links{display:none}
+  .hero-kpis{grid-template-columns:1fr 1fr}
+  .hero-kpis .kpi:nth-child(3){grid-column:1/-1;border-left:none;border-top:1px solid var(--border)}
+  .calc-lay{grid-template-columns:1fr}
+  .rg{grid-template-columns:1fr}
+  .ri.full{grid-column:auto}
+  .ss{display:none}
+  .faq-g{grid-template-columns:1fr}
+  .fi3{flex-direction:column;text-align:center}
+  .fr{text-align:center}
+  #news-banner{flex-wrap:wrap}
+}
+@media(max-width:480px){
+  .hero-kpis{grid-template-columns:1fr}
+  .hero-kpis .kpi+.kpi{border-left:none;border-top:1px solid var(--border)}
+  .status{flex-direction:column;align-items:flex-start;gap:8px}
+}
+
+/* ─ ANIMATE ─ */
+.up{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.up.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NEWS BANNER — set display:flex to show, display:none to hide
+     ═══════════════════════════════════════════════════════ -->
+<div id="news-banner" role="banner" aria-label="Actualité index">
+  <div class="news-icon" aria-hidden="true">📢</div>
+  <div class="news-content">
+    <div class="news-tag" data-t="newsTag">Actualité · Prévisions STATEC</div>
+    <div class="news-title" data-t="newsTitle">Prochaine tranche indiciaire attendue au Q2 2026</div>
+    <div class="news-sub" data-t="newsSub">Selon les prévisions du STATEC publiées le 9 février 2026, la prochaine tranche indiciaire (+2,5%) interviendrait au 2e trimestre 2026 (scénario central). La cote déclencheuse est fixée à 992,24 points.</div>
+  </div>
+  <button class="news-close" onclick="document.getElementById('news-banner').style.display='none'" aria-label="Fermer">×</button>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="top">
+  <a class="nav-brand" href="#top" aria-label="Index Luxembourg — Accueil">
+    <div class="nav-badge" aria-hidden="true">
+      <svg viewBox="0 0 16 16"><polyline points="2,11 6,6 9,9 14,3"/></svg>
+    </div>
+    <span data-t="navBrand">Index · Luxembourg</span>
+  </a>
+  <div class="nav-links" role="navigation" aria-label="Navigation principale">
+    <button class="nl" onclick="smoothTo('chart-s')" data-t="nl1">Évolution</button>
+    <button class="nl" onclick="smoothTo('how-s')" data-t="nl2">Mécanisme</button>
+    <button class="nl" onclick="smoothTo('calc-s')" data-t="nl3">Calculateur</button>
+    <button class="nl" onclick="smoothTo('hist-s')" data-t="nl4">Historique</button>
+    <button class="nl" onclick="smoothTo('faq-s')" data-t="nl5">FAQ</button>
+    <span class="nav-sep" aria-hidden="true"></span>
+    <a class="nl nav-blog" href="blog/index.html" data-t="nl6">Blog</a>
+  </div>
+  <div class="nav-r" role="navigation" aria-label="Sélection de langue">
+    <button class="lb active" onclick="setLang('fr')" lang="fr" hreflang="fr">FR</button>
+    <button class="lb" onclick="setLang('de')" lang="de" hreflang="de">DE</button>
+    <button class="lb" onclick="setLang('en')" lang="en" hreflang="en">EN</button>
+    <button class="lb" onclick="setLang('lb')" lang="lb" hreflang="lb">LB</button>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero" id="hero" role="banner">
+  <div class="hero-pat" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-c">
+    <div class="hero-tag" aria-hidden="true">
+      <div class="hero-tag-d"><span></span></div>
+      <span data-t="heroTag">Échelle mobile des salaires · Grand-Duché de Luxembourg</span>
+    </div>
+    <h1 class="ht" data-t-html="heroTitle">L'<em>Index</em><br>des salaires</h1>
+    <p class="hero-sub" data-t="heroSub">Le mécanisme automatique de protection du pouvoir d'achat des travailleurs luxembourgeois, en vigueur depuis 1921.</p>
+    <div class="hero-kpis" role="region" aria-label="Chiffres clés">
+      <div class="kpi">
+        <span class="kv gld">968,04</span>
+        <div class="kl" data-t="kpi1">Cote d'application</div>
+      </div>
+      <div class="kpi">
+        <span class="kv">992,24</span>
+        <div class="kl" data-t="kpi2">Prochain seuil</div>
+      </div>
+      <div class="kpi">
+        <span class="kv">+2,5%</span>
+        <div class="kl" data-t="kpi3">Hausse par tranche</div>
+      </div>
+    </div>
+    <div class="hero-ctas">
+      <button class="btn-n" onclick="smoothTo('calc-s')" data-t="cta1">Calculer mon impact</button>
+      <button class="btn-o" onclick="smoothTo('hist-s')" data-t="cta2">Voir l'historique</button>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">
+    <span data-t="scrollCue">Découvrir</span>
+    <div class="sc-line"></div>
+  </div>
+</header>
+
+<!-- ═══ CHART ═══ -->
+<section class="chart-sec" id="chart-s" aria-labelledby="chart-heading">
+  <div class="si">
+    <div class="up">
+      <div class="slabel" data-t="chartLabel">Données officielles STATEC</div>
+      <h2 class="sh" id="chart-heading" data-t-html="chartH">Évolution de l'<em>index</em> depuis 1999</h2>
+      <p class="sdesc" data-t="chartDesc">Cotes d'application successives de l'échelle mobile des salaires. Source : STATEC Luxembourg — statistiques.public.lu</p>
+    </div>
+    <div class="status up" style="transition-delay:.1s" role="status">
+      <div class="live"><div class="dp"></div><span data-t="sLive">En vigueur</span></div>
+      <div class="ss"></div>
+      <div class="si2"><span data-t="sLast">Dernière tranche :</span> <strong>1<sup>er</sup> mai 2025</strong></div>
+      <div class="ss"></div>
+      <div class="si2"><span data-t="sCote">Cote actuelle :</span> <strong>968,04 pts</strong></div>
+      <div class="ss"></div>
+      <div class="si2"><span data-t="sTrig">Seuil suivant :</span> <strong>992,24 pts</strong></div>
+      <div class="ss"></div>
+      <div class="si2"><span data-t="sNext">Prochaine tranche (prév.) :</span> <strong data-t="sQ">Q2 2026</strong></div>
+    </div>
+    <div class="chart-card up" style="transition-delay:.2s">
+      <div class="chart-tb">
+        <span class="chart-info" data-t="chartInfo">Cotes d'application · base 1.1.1948 · Source : STATEC</span>
+        <div class="cff" role="group" aria-label="Filtrer la période">
+          <button class="cf" onclick="fc(10)" data-yr="10" data-t="f10">10 ans</button>
+          <button class="cf" onclick="fc(15)" data-yr="15" data-t="f15">15 ans</button>
+          <button class="cf active" onclick="fc(25)" data-yr="25" data-t="f25">25 ans</button>
+        </div>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="theChart" role="img" aria-label="Évolution des cotes d'application de l'index des salaires luxembourgeois de 1999 à 2025">Données de l'index des salaires au Luxembourg 1999–2025.</canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW ═══ -->
+<section class="how-sec" id="how-s" aria-labelledby="how-heading">
+  <div class="si">
+    <div class="up">
+      <div class="slabel" data-t="howLabel">Mécanisme</div>
+      <h2 class="sh" id="how-heading" data-t-html="howH">Comment fonctionne l'<em>index</em> ?</h2>
+    </div>
+    <div class="how-g">
+      <article class="how-c up" style="transition-delay:.05s">
+        <div class="hn" aria-hidden="true">01</div>
+        <h3 class="ht2" data-t="h1t">Mesure mensuelle de l'IPC</h3>
+        <p class="hb" data-t="h1b">Le STATEC suit chaque mois ~7 700 prix dans ~580 points de vente. Depuis 2018, des données de caisse (scanner data) de supermarchés complètent l'échantillon avec ~90 000 variétés supplémentaires.</p>
+      </article>
+      <article class="how-c up" style="transition-delay:.1s">
+        <div class="hn" aria-hidden="true">02</div>
+        <h3 class="ht2" data-t="h2t">Raccordement à la base 1948</h3>
+        <p class="hb" data-t="h2b">L'IPCN est multiplié par un facteur de raccord constant pour obtenir l'indice base 100 = 1.1.1948. Ce facteur ne change que lors de neutralisations légales (accises tabac, taxe CO₂, etc.).</p>
+      </article>
+      <article class="how-c up" style="transition-delay:.15s">
+        <div class="hn" aria-hidden="true">03</div>
+        <h3 class="ht2" data-t="h3t">Moyenne semestrielle glissante</h3>
+        <p class="hb" data-t="h3b">La moyenne des 6 derniers indices raccordés est calculée mensuellement. Lorsqu'elle dépasse la cote d'échéance (= dernière cote × 1,025), une nouvelle tranche est déclenchée le mois suivant.</p>
+      </article>
+      <article class="how-c up" style="transition-delay:.2s">
+        <div class="hn" aria-hidden="true">04</div>
+        <h3 class="ht2" data-t="h4t">Hausse automatique de 2,5%</h3>
+        <p class="hb" data-t="h4b">Tous les salaires, traitements et pensions augmentent de 2,5% dès la publication. Mécanisme d'ordre public (art. L.223-1 Code du Travail) — aucune dérogation n'est possible, même par convention collective.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CALCULATOR ═══ -->
+<section class="calc-sec" id="calc-s" aria-labelledby="calc-heading">
+  <div class="si">
+    <div class="up">
+      <div class="slabel" data-t="calcLabel">Outil interactif</div>
+      <h2 class="sh" id="calc-heading" data-t-html="calcH">Calculez votre <em>impact</em></h2>
+      <p class="sdesc" data-t="calcDesc">Estimez l'effet d'une ou plusieurs tranches indiciaires sur votre salaire mensuel brut.</p>
+    </div>
+    <div class="calc-lay">
+      <div class="cform up" style="transition-delay:.08s" role="form" aria-label="Calculateur d'impact salarial">
+        <div class="fg">
+          <label class="fl" for="salIn" data-t="lSal">Salaire mensuel brut (€)</label>
+          <input class="fi" type="number" id="salIn" value="4500" min="0" step="50" oninput="doCalc()" aria-label="Salaire mensuel brut en euros">
+        </div>
+        <div class="fg">
+          <label class="fl" for="trIn" data-t="lTr">Nombre de tranches</label>
+          <select class="fs" id="trIn" onchange="doCalc()" aria-label="Nombre de tranches indiciaires">
+            <option value="1">1 tranche — +2,50%</option>
+            <option value="2">2 tranches — +5,06%</option>
+            <option value="3">3 tranches — +7,69%</option>
+            <option value="4">4 tranches — +10,38%</option>
+            <option value="5">5 tranches — +13,14%</option>
+          </select>
+        </div>
+        <div class="sb">
+          <div class="sh2">
+            <span data-t="lProj">Période de projection</span>
+            <strong><span id="moDisp">12</span> <span data-t="lMo">mois</span></strong>
+          </div>
+          <input type="range" id="moIn" min="1" max="60" step="1" value="12" style="--pct:18.6%"
+            oninput="this.style.setProperty('--pct',(this.value-1)/59*100+'%');document.getElementById('moDisp').textContent=this.value;doCalc()"
+            aria-label="Période de projection en mois" aria-valuemin="1" aria-valuemax="60">
+        </div>
+        <div class="sb">
+          <div class="sh2">
+            <span data-t="lTax">Taux d'imposition estimé</span>
+            <strong><span id="taxDisp">28</span>%</strong>
+          </div>
+          <input type="range" id="taxIn" min="0" max="50" step="1" value="28" style="--pct:56%"
+            oninput="this.style.setProperty('--pct',this.value/50*100+'%');document.getElementById('taxDisp').textContent=this.value;doCalc()"
+            aria-label="Taux d'imposition estimé en pourcentage" aria-valuemin="0" aria-valuemax="50">
+        </div>
+        <button class="calc-btn" onclick="doCalc()" data-t="calcBtn">Calculer l'impact salarial</button>
+      </div>
+      <div class="rpanel up" style="transition-delay:.16s" role="region" aria-label="Résultats du calculateur" aria-live="polite">
+        <div class="rph" data-t="rpHead">Résultats de la simulation</div>
+        <div class="rg">
+          <div class="ri">
+            <div class="rl" data-t="rBef">Avant indexation</div>
+            <div class="rv" id="rBef" aria-live="polite">4 500 €</div>
+          </div>
+          <div class="ri acc">
+            <div class="rl" data-t="rAft">Après indexation</div>
+            <div class="rv" id="rAft" aria-live="polite">4 613 €</div>
+          </div>
+        </div>
+        <div class="rg">
+          <div class="ri gbg">
+            <div class="rl" data-t="rGb">Gain mensuel brut</div>
+            <div class="rv grn" id="rGb" aria-live="polite">+113 €</div>
+          </div>
+          <div class="ri gbg">
+            <div class="rl" data-t="rGn">Gain mensuel net est.</div>
+            <div class="rv grn" id="rGn" aria-live="polite">+81 €</div>
+          </div>
+        </div>
+        <div class="rg">
+          <div class="ri">
+            <div class="rl" data-t="rPct">Hausse totale</div>
+            <div class="rv grn" id="rPct" aria-live="polite">+2,50%</div>
+          </div>
+          <div class="ri">
+            <div class="rl" data-t="rAnn">Gain annuel brut</div>
+            <div class="rv grn" id="rAnn" aria-live="polite">+1 350 €</div>
+          </div>
+        </div>
+        <div class="rg">
+          <div class="ri acc full">
+            <div class="rl" data-t="rCum">Gain cumulé (période projetée)</div>
+            <div class="rv" id="rCum" aria-live="polite">+1 350 €</div>
+          </div>
+        </div>
+        <div class="rnote" data-t="rNote">Calcul sur salaire brut. Gain net estimé après le taux d'imposition saisi. L'indexation s'applique aussi aux pensions et allocations familiales. Mécanisme d'ordre public — art. L.223-1 Code du Travail.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HISTORY ═══ -->
+<section class="hist-sec" id="hist-s" aria-labelledby="hist-heading">
+  <div class="si">
+    <div class="up">
+      <div class="slabel" data-t="histLabel">Source officielle STATEC</div>
+      <h2 class="sh" id="hist-heading" data-t-html="histH">Toutes les <em>tranches</em> depuis 1988</h2>
+      <p class="sdesc" data-t="histDesc">Cotes d'application et cotes d'échéance officielles — communiqués STATEC et Journal Officiel du Grand-Duché de Luxembourg.</p>
+    </div>
+    <div class="hw up" style="transition-delay:.1s">
+      <div class="hs">
+        <table aria-label="Historique complet des tranches indiciaires au Luxembourg">
+          <thead>
+            <tr>
+              <th scope="col" data-t="cDate">Date d'entrée</th>
+              <th scope="col" data-t="cApp">Cote d'application</th>
+              <th scope="col" data-t="cEch">Cote d'échéance</th>
+              <th scope="col" data-t="cSmw">SSM non qualifié</th>
+              <th scope="col" data-t="cSmwq">SSM qualifié</th>
+              <th scope="col" data-t="cGap">Délai depuis préc.</th>
+            </tr>
+          </thead>
+          <tbody id="histTbody"></tbody>
+        </table>
+      </div>
+      <div class="src-strip">
+        <div class="sbadge"><div class="sbadge-d"></div>STATEC Luxembourg</div>
+        <div class="sbadge"><div class="sbadge-d"></div>statistiques.public.lu</div>
+        <span class="src-t" data-t="srcNote">Données issues des communiqués officiels STATEC et de l'échelle mobile publiée au Journal Officiel.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="faq-sec" id="faq-s" aria-labelledby="faq-heading">
+  <div class="si">
+    <div class="up">
+      <div class="slabel" data-t="faqLabel">Questions fréquentes</div>
+      <h2 class="sh" id="faq-heading" data-t-html="faqH">Tout savoir sur l'<em>index</em></h2>
+    </div>
+    <div class="faq-g" id="faqGrid" role="list"></div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="fi3">
+    <div class="fb" data-t="footBrand">Index · Luxembourg</div>
+    <div class="fr">
+      <div class="fsrc">
+        <span data-t="footSrc">Source officielle : STATEC Luxembourg · statistiques.public.lu</span><br>
+        <a href="https://statistiques.public.lu/fr/donnees/themes/economie-finances/dossier-indice-prix-inflation.html"
+           target="_blank" rel="noopener noreferrer" class="footer-link" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:11px">
+          statistiques.public.lu ↗
+        </a><br>
+        <span data-t="footDis" style="font-size:11px;color:rgba(255,255,255,.35)">Outil informatif — données non contractuelles · © 2026</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ════════════════════════════════════════════════════════
+   DATA — STATEC official only
+   ════════════════════════════════════════════════════════ */
+const DATA=[
+  {d:'01.05.2025',app:968.04,ech:1013.51,smw:2703.74,smwq:3244.48},
+  {d:'01.01.2025',app:944.43,ech:988.79, smw:2637.79,smwq:3165.35},
+  {d:'01.09.2023',app:944.43,ech:988.75, smw:2570.93,smwq:3085.11},
+  {d:'01.04.2023',app:921.40,ech:964.67, smw:2508.24,smwq:3009.88},
+  {d:'01.02.2023',app:898.93,ech:941.14, smw:2447.07,smwq:2936.48},
+  {d:'01.04.2022',app:877.01,ech:918.20, smw:2313.38,smwq:2776.05},
+  {d:'01.10.2021',app:855.62,ech:895.78, smw:2256.95,smwq:2708.35},
+  {d:'01.08.2018',app:814.40,ech:852.63, smw:2048.54,smwq:2458.25},
+  {d:'01.01.2017',app:794.54,ech:831.84, smw:1998.59,smwq:2398.30},
+  {d:'01.10.2013',app:775.17,ech:811.56, smw:null,smwq:null},
+  {d:'01.10.2012',app:756.27,ech:791.77, smw:null,smwq:null},
+  {d:'01.10.2011',app:737.83,ech:772.46, smw:null,smwq:null},
+  {d:'01.07.2010',app:719.84,ech:753.62, smw:null,smwq:null},
+  {d:'01.03.2009',app:702.29,ech:735.24, smw:null,smwq:null},
+  {d:'01.03.2008',app:685.17,ech:717.31, smw:null,smwq:null},
+  {d:'01.12.2006',app:668.46,ech:699.82, smw:null,smwq:null},
+  {d:'01.10.2005',app:652.16,ech:682.76, smw:null,smwq:null},
+  {d:'01.10.2004',app:636.26,ech:666.11, smw:null,smwq:null},
+  {d:'01.08.2003',app:620.75,ech:649.87, smw:null,smwq:null},
+  {d:'01.06.2002',app:605.61,ech:634.02, smw:null,smwq:null},
+  {d:'01.04.2001',app:590.84,ech:618.56, smw:null,smwq:null},
+  {d:'01.07.2000',app:576.43,ech:603.48, smw:null,smwq:null},
+  {d:'01.08.1999',app:562.38,ech:588.77, smw:null,smwq:null},
+  {d:'01.02.1997',app:548.67,ech:574.41, smw:null,smwq:null},
+  {d:'01.05.1995',app:535.29,ech:560.40, smw:null,smwq:null},
+  {d:'01.02.1994',app:522.24,ech:546.74, smw:null,smwq:null},
+  {d:'01.05.1993',app:509.51,ech:533.41, smw:null,smwq:null},
+  {d:'01.08.1992',app:497.09,ech:520.40, smw:null,smwq:null},
+  {d:'01.11.1991',app:484.97,ech:507.71, smw:null,smwq:null},
+  {d:'01.01.1991',app:473.15,ech:495.33, smw:null,smwq:null},
+  {d:'01.05.1990',app:461.61,ech:483.25, smw:null,smwq:null},
+  {d:'01.09.1989',app:450.36,ech:471.47, smw:null,smwq:null},
+  {d:'01.12.1988',app:439.38,ech:459.98, smw:null,smwq:null},
+];
+
+/* ════════════════════════════════════════════════════════
+   LANGUAGE LOADER
+   Reads translations.txt (single file, all languages).
+   Parses it into TX = { fr:{…}, de:{…}, en:{…}, lb:{…} }
+   then caches; each language is applied on demand.
+
+   FILE FORMAT  (translations.txt)
+   ─────────────────────────────────
+   [fr]           ← section header
+   key = value    ← plain text
+   key = has <b>html</b>   ← HTML values allowed
+   faqs.N.q = …   ← FAQ question N
+   faqs.N.a = …   ← FAQ answer  N
+   # comment      ← ignored
+   (blank line)   ← ignored
+   ════════════════════════════════════════════════════════ */
+let lang      = 'fr';
+let T         = null;   /* active translation object          */
+const TX      = {};     /* cache: { fr:{…}, de:{…}, … }       */
+let txLoaded  = false;  /* true once translations.txt fetched */
+let chartInst = null;
+
+const fmtN = (n, d=2) => n == null
+  ? (T ? T.na : 'n/a')
+  : n.toLocaleString('fr-LU', { minimumFractionDigits: d, maximumFractionDigits: d });
+const fmtE = n => n == null ? (T ? T.na : 'n/a') : fmtN(n) + ' €';
+const parseD = s => { const [d,m,y] = s.split('.'); return new Date(+y, m-1, +d); };
+const monthsBetween = (a, b) => {
+  const A = parseD(a), B = parseD(b);
+  return (B.getFullYear()-A.getFullYear())*12 + (B.getMonth()-A.getMonth());
+};
+
+/* ── Parse translations.txt into TX object ── */
+function parseTxt(text) {
+  let section = null;
+  for (const raw of text.split('\n')) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) continue;
+
+    /* [lang] header */
+    const sec = line.match(/^\[([a-z]{2})\]$/);
+    if (sec) { section = sec[1]; TX[section] = TX[section] || { faqs: {} }; continue; }
+    if (!section) continue;
+
+    /* key = value */
+    const eq = line.indexOf('=');
+    if (eq < 0) continue;
+    const key = line.slice(0, eq).trim();
+    const val = line.slice(eq + 1).trim();
+
+    /* faqs.N.q / faqs.N.a */
+    const faqM = key.match(/^faqs\.(\d+)\.(q|a)$/);
+    if (faqM) {
+      const n = faqM[1], part = faqM[2];
+      TX[section].faqs[n] = TX[section].faqs[n] || {};
+      TX[section].faqs[n][part] = val;
+    } else {
+      TX[section][key] = val;
+    }
+  }
+  /* convert faqs sparse object → sorted array [{q,a}, …] */
+  for (const l of Object.keys(TX)) {
+    if (TX[l].faqs) {
+      TX[l].faqs = Object.keys(TX[l].faqs)
+        .sort((a,b) => +a - +b)
+        .map(n => TX[l].faqs[n]);
+    }
+  }
+}
+
+/* ── Keys whose values are rendered as innerHTML (HTML allowed) ── */
+const HTML_KEYS = new Set([
+  'heroTitle','chartH','howH','calcH','histH','faqH'
+]);
+
+/* ── Apply a translation object to the DOM ── */
+function applyLang(translations) {
+  T = translations;
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lb')
+    .forEach(b => b.classList.toggle('active', b.textContent === lang.toUpperCase()));
+
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const k = el.getAttribute('data-t');
+    if (T[k] === undefined) return;
+    el.textContent = T[k];
+  });
+  document.querySelectorAll('[data-t-html]').forEach(el => {
+    const k = el.getAttribute('data-t-html');
+    if (T[k] === undefined) return;
+    el.innerHTML = T[k];
+  });
+
+  buildFAQ();
+  buildTable();
+  doCalc();
+}
+
+/* ── Switch language: fetch txt once, then apply ── */
+async function setLang(l) {
+  lang = l;
+  /* optimistic button highlight */
+  document.querySelectorAll('.lb')
+    .forEach(b => b.classList.toggle('active', b.textContent === l.toUpperCase()));
+
+  if (!txLoaded) {
+    try {
+      const res  = await fetch('./translations.txt');
+      const text = await res.text();
+      parseTxt(text);
+      txLoaded = true;
+    } catch (err) {
+      console.error('[i18n] Could not load translations.txt', err);
+      return;
+    }
+  }
+
+  if (!TX[l]) { console.warn('[i18n] No section [' + l + '] in translations.txt'); return; }
+  applyLang(TX[l]);
+}
+
+/* ════════════════════════════════════════════════════════
+   CHART
+   ════════════════════════════════════════════════════════ */
+const allPts=DATA.slice().reverse();
+function getFiltered(y){const c=new Date();c.setFullYear(c.getFullYear()-y);return allPts.filter(d=>parseD(d.d)>=c)}
+function buildChart(y){
+  const pts=getFiltered(y);
+  const labels=pts.map(p=>p.d.slice(3));
+  const vals=pts.map(p=>p.app);
+  const ctx=document.getElementById('theChart').getContext('2d');
+  if(chartInst)chartInst.destroy();
+  chartInst=new Chart(ctx,{
+    type:'line',
+    data:{labels,datasets:[{
+      label:'Cote d\'application',data:vals,
+      borderColor:'#0f2a56',backgroundColor:'rgba(15,42,86,0.04)',
+      borderWidth:2,pointRadius:5,pointHoverRadius:7,
+      pointBackgroundColor:'#0f2a56',pointBorderColor:'#ffffff',pointBorderWidth:2,
+      fill:true,tension:0.3,
+    }]},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'rgba(15,42,86,.95)',titleColor:'rgba(255,255,255,.6)',bodyColor:'#fff',
+          borderColor:'rgba(15,42,86,.3)',borderWidth:1,padding:12,cornerRadius:8,
+          callbacks:{label:c=>' '+c.parsed.y.toFixed(2).replace('.',',')+' pts'}
+        }
+      },
+      scales:{
+        x:{ticks:{color:'#7a8a9e',font:{size:11,family:'Manrope'},autoSkip:true,maxTicksLimit:11,maxRotation:30},grid:{color:'rgba(15,42,86,.05)'},border:{color:'#dde3ef'}},
+        y:{min:Math.floor(Math.min(...vals)/50)*50,ticks:{color:'#7a8a9e',font:{size:11,family:'Manrope'}},grid:{color:'rgba(15,42,86,.05)'},border:{color:'#dde3ef'}},
+      }
+    }
+  });
+}
+function fc(y){
+  document.querySelectorAll('.cf').forEach(b=>b.classList.toggle('active',+b.getAttribute('data-yr')===y));
+  buildChart(y);
+}
+
+/* ════════════════════════════════════════════════════════
+   CALCULATOR
+   ════════════════════════════════════════════════════════ */
+function doCalc(){
+  const s=parseFloat(document.getElementById('salIn').value)||0;
+  const tr=parseInt(document.getElementById('trIn').value)||1;
+  const mo=parseInt(document.getElementById('moIn').value)||12;
+  const tax=parseInt(document.getElementById('taxIn').value)||0;
+  const f=Math.pow(1.025,tr),after=s*f,gain=after-s,pct=(f-1)*100,net=gain*(1-tax/100);
+  document.getElementById('rBef').textContent=fmtE(s);
+  document.getElementById('rAft').textContent=fmtE(after);
+  document.getElementById('rGb').textContent='+'+fmtE(gain);
+  document.getElementById('rGn').textContent='+'+fmtE(net);
+  document.getElementById('rPct').textContent='+'+pct.toFixed(2).replace('.',',')+' %';
+  document.getElementById('rAnn').textContent='+'+fmtE(gain*12);
+  document.getElementById('rCum').textContent='+'+fmtE(gain*mo);
+}
+
+/* ════════════════════════════════════════════════════════
+   HISTORY TABLE
+   ════════════════════════════════════════════════════════ */
+function buildTable(){
+  if (!T) return;
+  document.getElementById('histTbody').innerHTML=DATA.map((r,i)=>{
+    const prev=DATA[i+1];
+    const gap=prev?monthsBetween(prev.d,r.d)+' '+T.months:'—';
+    return`<tr${i<3?' class="rr"':''}>
+      <td>${r.d}</td>
+      <td><span class="ibadge">${r.app.toFixed(2).replace('.',',')}</span></td>
+      <td style="font-size:12px;color:var(--text-d)">${r.ech.toFixed(2).replace('.',',')}</td>
+      <td>${fmtE(r.smw)}</td><td>${fmtE(r.smwq)}</td>
+      <td style="font-size:12px;color:var(--text-d)">${gap}</td>
+    </tr>`;
+  }).join('');
+}
+
+/* ════════════════════════════════════════════════════════
+   FAQ
+   ════════════════════════════════════════════════════════ */
+function buildFAQ(){
+  if (!T || !T.faqs) return;
+  const faqs = T.faqs;
+  document.getElementById('faqGrid').innerHTML=faqs.map((f,i)=>`
+    <div class="faq-i" role="listitem" onclick="toggleFAQ(this)" aria-expanded="false">
+      <div class="faq-q">${f.q}</div>
+      <div class="faq-a">${f.a}</div>
+      <div class="faq-tog" aria-hidden="true">+</div>
+    </div>`).join('');
+}
+function toggleFAQ(el){
+  const open=el.classList.contains('open');
+  document.querySelectorAll('.faq-i').forEach(e=>{e.classList.remove('open');e.setAttribute('aria-expanded','false')});
+  if(!open){el.classList.add('open');el.setAttribute('aria-expanded','true')}
+}
+
+/* ════════════════════════════════════════════════════════
+   UTILS
+   ════════════════════════════════════════════════════════ */
+function smoothTo(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.08});
+document.querySelectorAll('.up').forEach(el=>obs.observe(el));
+
+/* ════════════════════════════════════════════════════════
+   INIT
+   ════════════════════════════════════════════════════════ */
+buildChart(25);
+setLang('fr');  /* fetches translations.txt once → parseTxt → applyLang */
+</script>
+</body>
+</html>

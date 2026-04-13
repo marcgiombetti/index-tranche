@@ -1,0 +1,512 @@
+# =============================================================================
+#  TRANSLATIONS — Index des Salaires · Luxembourg
+#  File: translations.txt
+#
+#  FORMAT
+#  ------
+#  [lang]          starts a language section  (fr, de, en, lb)
+#  key = value     plain text value
+#  key = <html>    values containing < > are treated as HTML (rich text)
+#  faqs.N.q =      FAQ question N  (N = 1, 2, 3 …)
+#  faqs.N.a =      FAQ answer N
+#
+#  EDITING RULES
+#  -------------
+#  • Lines starting with # are comments and are ignored
+#  • Blank lines are ignored
+#  • Do NOT use = inside a value (use — or : instead)
+#  • HTML is allowed in heroTitle, chartH, howH, calcH, histH, faqH
+#    (keys that end in a capital letter after a lowercase run, or are listed
+#     in the HTML_KEYS constant in index.html)
+#  • Keep faqs numbered consecutively from 1
+#  • To add a language: add a new [xx] section with all keys below
+#
+# =============================================================================
+
+
+# =============================================================================
+[fr]
+# =============================================================================
+
+# Navigation
+navBrand = Index · Luxembourg
+nl1      = Évolution
+nl2      = Mécanisme
+nl3      = Calculateur
+nl4      = Historique
+nl5      = FAQ
+nl6      = Blog d'actualité (news banner)
+newsTag   = Actualité · Prévisions STATEC
+newsTitle = Prochaine tranche indiciaire attendue au Q2 2026
+newsSub   = Selon les prévisions STATEC du 9 février 2026, la prochaine tranche (+2,5%) interviendrait au 2e trimestre 2026 (scénario central). Cote déclencheuse : 992,24 pts.
+
+# Hero
+heroTag   = Échelle mobile des salaires · Grand-Duché de Luxembourg
+heroTitle = L'<em>Index</em><br>des salaires
+heroSub   = Le mécanisme automatique de protection du pouvoir d'achat des travailleurs luxembourgeois, en vigueur depuis 1921.
+
+# KPIs
+kpi1 = Cote d'application
+kpi2 = Prochain seuil
+kpi3 = Hausse par tranche
+
+# Boutons
+cta1      = Calculer mon impact
+cta2      = Voir l'historique
+scrollCue = Découvrir
+
+# Graphique
+chartLabel = Données officielles STATEC
+chartH     = Évolution de l'<em>index</em> depuis 1999
+chartDesc  = Cotes d'application successives de l'échelle mobile des salaires. Source : STATEC Luxembourg — statistiques.public.lu
+chartInfo  = Cotes d'application · base 1.1.1948 · Source : STATEC
+
+# Barre de statut
+sLive = En vigueur
+sLast = Dernière tranche :
+sCote = Cote actuelle :
+sTrig = Seuil suivant :
+sNext = Prochaine (prév.) :
+sQ    = Q2 2026
+
+# Filtres graphique
+f10 = 10 ans
+f15 = 15 ans
+f25 = 25 ans
+
+# Mécanisme
+howLabel = Mécanisme
+howH     = Comment fonctionne l'<em>index</em> ?
+h1t = Mesure mensuelle de l'IPC
+h1b = Le STATEC suit chaque mois ~7 700 prix dans ~580 points de vente. Depuis 2018, des données de caisse de supermarchés complètent l'échantillon (~90 000 variétés supplémentaires).
+h2t = Raccordement à la base 1948
+h2b = L'IPCN est multiplié par un facteur de raccord constant pour obtenir l'indice base 100 = 1.1.1948. Ce facteur ne change qu'en cas de neutralisation légale (accises tabac, taxe CO₂…).
+h3t = Moyenne semestrielle glissante
+h3b = La moyenne des 6 derniers indices raccordés est calculée mensuellement. Si elle dépasse la cote d'échéance (= dernière cote × 1,025), une tranche est déclenchée le mois suivant.
+h4t = Hausse automatique de 2,5%
+h4b = Tous les salaires, traitements et pensions augmentent de 2,5% dès la publication. Mécanisme d'ordre public (art. L.223-1 Code du Travail) — aucune dérogation n'est possible.
+
+# Calculateur
+calcLabel = Outil interactif
+calcH     = Calculez votre <em>impact</em>
+calcDesc  = Estimez l'effet d'une ou plusieurs tranches indiciaires sur votre salaire mensuel brut.
+lSal      = Salaire mensuel brut (€)
+lTr       = Nombre de tranches
+lProj     = Période de projection
+lMo       = mois
+lTax      = Taux d'imposition estimé
+calcBtn   = Calculer l'impact salarial
+
+# Résultats
+rpHead = Résultats de la simulation
+rBef   = Avant indexation
+rAft   = Après indexation
+rGb    = Gain mensuel brut
+rGn    = Gain mensuel net est.
+rPct   = Hausse totale
+rAnn   = Gain annuel brut
+rCum   = Gain cumulé (période projetée)
+rNote  = Calcul sur salaire brut. Gain net estimé après le taux d'imposition saisi. L'indexation s'applique aussi aux pensions et allocations familiales. Mécanisme d'ordre public — art. L.223-1 Code du Travail.
+
+# Historique
+histLabel = Source officielle STATEC
+histH     = Toutes les <em>tranches</em> depuis 1988
+histDesc  = Cotes d'application et cotes d'échéance officielles — communiqués STATEC et Journal Officiel.
+cDate     = Date d'entrée
+cApp      = Cote d'application
+cEch      = Cote d'échéance
+cSmw      = SSM non qualifié
+cSmwq     = SSM qualifié
+cGap      = Délai depuis préc.
+srcNote   = Données issues des communiqués officiels STATEC et de l'échelle mobile publiée au Journal Officiel.
+
+# FAQ
+faqLabel = Questions fréquentes
+faqH     = Tout savoir sur l'<em>index</em>
+faqs.1.q = Quand aura lieu la prochaine tranche indiciaire ?
+faqs.1.a = Selon les prévisions STATEC du 9 février 2026, la prochaine tranche est attendue au 2e trimestre 2026 (scénario central, inflation 1,8%). La cote déclencheuse est fixée à 992,24 points.
+faqs.2.q = Quel est le montant de la hausse lors d'une tranche ?
+faqs.2.a = Chaque tranche entraîne une hausse automatique de 2,5% de tous les salaires, traitements et pensions, conformément à l'article L.223-1 du Code du Travail.
+faqs.3.q = Quelle est la cote d'application actuelle ?
+faqs.3.a = La cote d'application actuelle est de 968,04 points (en vigueur depuis le 1er mai 2025). La prochaine cote déclencheuse est 992,24 points.
+faqs.4.q = L'indexation s'applique-t-elle à tous les salariés ?
+faqs.4.a = Oui. Le mécanisme est d'ordre public et s'applique à tous les employeurs du secteur privé et public. Aucune dérogation à la baisse n'est possible, même par convention collective.
+faqs.5.q = Comment est calculée la moyenne semestrielle ?
+faqs.5.a = C'est la moyenne arithmétique des 6 derniers indices raccordés à la base 1.1.1948. Lorsqu'elle dépasse la cote d'échéance, une nouvelle tranche est déclenchée le mois suivant.
+faqs.6.q = Les primes sont-elles aussi indexées ?
+faqs.6.a = Seuls les éléments de rémunération explicitement indexés dans le contrat ou la convention collective le sont. Les primes non contractuellement indexées ne sont pas automatiquement revalorisées.
+
+# Pied de page
+footBrand = Index · Luxembourg
+footSrc   = Source officielle : STATEC Luxembourg · statistiques.public.lu
+footDis   = Outil informatif — données non contractuelles · © 2026
+
+# Utilitaires
+na     = n/d
+months = mois
+
+
+# =============================================================================
+[de]
+# =============================================================================
+
+# Navigation
+navBrand = Index · Luxemburg
+nl1      = Entwicklung
+nl2      = Mechanismus
+nl3      = Rechner
+nl4      = Chronik
+nl5      = FAQ
+nl6      = Blog
+newsTag   = Aktuell · STATEC-Prognosen
+newsTitle = Nächste Indextranche im Q2 2026 erwartet
+newsSub   = Laut STATEC-Prognosen vom 9. Februar 2026 wird die nächste Tranche (+2,5%) voraussichtlich im 2. Quartal 2026 ausgelöst (Basisszenario). Auslöseschwelle: 992,24 Punkte.
+
+# Hero
+heroTag   = Gleitende Lohnskala · Großherzogtum Luxemburg
+heroTitle = Der Lohn<em>index</em><br>Luxemburgs
+heroSub   = Der automatische Mechanismus zum Schutz der Kaufkraft luxemburgischer Arbeitnehmer, seit 1921 in Kraft.
+
+# KPIs
+kpi1 = Aktueller Anwendungspunkt
+kpi2 = Nächste Auslöseschwelle
+kpi3 = Erhöhung pro Tranche
+
+# Buttons
+cta1      = Auswirkung berechnen
+cta2      = Chronik ansehen
+scrollCue = Entdecken
+
+# Diagramm
+chartLabel = Offizielle STATEC-Daten
+chartH     = Entwicklung des <em>Index</em> seit 1999
+chartDesc  = Aufeinanderfolgende Anwendungspunkte der gleitenden Lohnskala. Quelle: STATEC Luxemburg — statistiques.public.lu
+chartInfo  = Anwendungspunkte · Basis 1.1.1948 · Quelle: STATEC
+
+# Statusleiste
+sLive = In Kraft
+sLast = Letzte Tranche:
+sCote = Aktueller Punkt:
+sTrig = Nächste Schwelle:
+sNext = Nächste (Prognose):
+sQ    = Q2 2026
+
+# Diagrammfilter
+f10 = 10 Jahre
+f15 = 15 Jahre
+f25 = 25 Jahre
+
+# Mechanismus
+howLabel = Mechanismus
+howH     = Wie funktioniert der <em>Index</em>?
+h1t = Monatliche VPI-Messung
+h1b = STATEC verfolgt monatlich ~7.700 Preise in ~580 Verkaufsstellen. Seit 2018 ergänzen Kassendaten aus Supermärkten (~90.000 weitere Varietäten) die Erhebung.
+h2t = Verkettung zur Basis 1948
+h2b = Der IPCN wird mit einem konstanten Verkettungsfaktor auf die Basis 100 = 1.1.1948 umgerechnet. Änderungen nur bei gesetzlicher Neutralisierung (Tabaksteuern, CO₂-Steuer…).
+h3t = Gleitender Halbjahres­durchschnitt
+h3b = Der Mittelwert der letzten 6 verketteten Indizes wird monatlich berechnet. Übersteigt er die Auslöseschwelle (= letzter Punkt × 1,025), tritt eine neue Tranche im Folgemonat in Kraft.
+h4t = Automatische Erhöhung um 2,5%
+h4b = Alle Löhne, Gehälter und Renten steigen ab Veröffentlichung um 2,5%. Zwingende öffentliche Ordnung — keine Ausnahmen möglich.
+
+# Rechner
+calcLabel = Interaktives Tool
+calcH     = Berechnen Sie Ihre <em>Auswirkung</em>
+calcDesc  = Schätzen Sie die Auswirkung einer oder mehrerer Indextranchen auf Ihr monatliches Bruttogehalt.
+lSal      = Monatliches Bruttogehalt (€)
+lTr       = Anzahl der Tranchen
+lProj     = Projektionszeitraum
+lMo       = Monate
+lTax      = Geschätzter Steuersatz
+calcBtn   = Gehaltsauswirkung berechnen
+
+# Ergebnisse
+rpHead = Simulationsergebnisse
+rBef   = Vor Indexierung
+rAft   = Nach Indexierung
+rGb    = Monatl. Bruttogewinn
+rGn    = Gesch. Nettogewinn / Monat
+rPct   = Gesamterhöhung
+rAnn   = Jährl. Bruttogewinn
+rCum   = Kumulierter Gewinn (Projektion)
+rNote  = Berechnung auf Bruttobasis. Nettogewinn nach dem eingegebenen Steuersatz geschätzt. Gilt auch für Renten und Familienleistungen.
+
+# Historik
+histLabel = Offizielle STATEC-Quelle
+histH     = Alle <em>Tranchen</em> seit 1988
+histDesc  = Offizielle Anwendungspunkte und Auslöseschwellen — STATEC-Pressemitteilungen und Amtsblatt.
+cDate     = Gültig ab
+cApp      = Anwendungspunkt
+cEch      = Auslöseschwelle
+cSmw      = Mindestlohn (unqualifiz.)
+cSmwq     = Mindestlohn (qualifiz.)
+cGap      = Abstand zur Vorh.
+srcNote   = Daten aus offiziellen STATEC-Pressemitteilungen und dem im Amtsblatt veröffentlichten Lohnindex.
+
+# FAQ
+faqLabel = Häufige Fragen
+faqH     = Alles über den <em>Index</em>
+faqs.1.q = Wann findet die nächste Indextranche statt?
+faqs.1.a = Laut STATEC-Prognosen vom 9. Februar 2026 ist die nächste Tranche im 2. Quartal 2026 zu erwarten (Basisszenario, Inflation 1,8%). Die Auslöseschwelle liegt bei 992,24 Punkten.
+faqs.2.q = Wie hoch ist die Erhöhung pro Tranche?
+faqs.2.a = Jede Tranche bewirkt eine automatische Erhöhung von 2,5% aller Löhne, Gehälter und Renten — ohne jede Ausnahme.
+faqs.3.q = Was ist der aktuelle Anwendungspunkt?
+faqs.3.a = Der aktuelle Anwendungspunkt beträgt 968,04 Punkte (seit 1. Mai 2025). Die nächste Auslöseschwelle liegt bei 992,24 Punkten.
+faqs.4.q = Gilt die Indexierung für alle Arbeitnehmer?
+faqs.4.a = Ja. Der Mechanismus ist öffentlicher Ordnung und gilt für alle Arbeitgeber im privaten und öffentlichen Sektor. Keine Abweichungen nach unten möglich.
+faqs.5.q = Wie wird der gleitende Durchschnitt berechnet?
+faqs.5.a = Es ist das arithmetische Mittel der letzten 6 verketteten Indizes (Basis 1.1.1948). Überschreitet er die Auslöseschwelle, tritt eine neue Tranche im Folgemonat in Kraft.
+faqs.6.q = Werden auch Boni indexiert?
+faqs.6.a = Nur vertraglich oder tariflich explizit indexierte Vergütungselemente werden automatisch angepasst. Nicht indexierte Prämien bleiben unverändert.
+
+# Fußzeile
+footBrand = Index · Luxemburg
+footSrc   = Offizielle Quelle: STATEC Luxemburg · statistiques.public.lu
+footDis   = Nur zu Informationszwecken — nicht rechtsverbindlich · © 2026
+
+# Hilfswerte
+na     = k.A.
+months = Monate
+
+
+# =============================================================================
+[en]
+# =============================================================================
+
+# Navigation
+navBrand = Index · Luxembourg
+nl1      = Evolution
+nl2      = Mechanism
+nl3      = Calculator
+nl4      = History
+nl5      = FAQ
+nl6      = Blog
+newsTag   = News · STATEC Forecast
+newsTitle = Next wage index tranche expected in Q2 2026
+newsSub   = According to STATEC forecasts published 9 February 2026, the next tranche (+2.5%) is expected in Q2 2026 (central scenario). Trigger threshold: 992.24 pts.
+
+# Hero
+heroTag   = Wage Sliding Scale · Grand Duchy of Luxembourg
+heroTitle = Luxembourg's<br>wage <em>index</em>
+heroSub   = The automatic mechanism protecting the purchasing power of Luxembourg workers, in force since 1921.
+
+# KPIs
+kpi1 = Current application rate
+kpi2 = Next trigger threshold
+kpi3 = Increase per tranche
+
+# Buttons
+cta1      = Calculate my impact
+cta2      = View history
+scrollCue = Discover
+
+# Chart
+chartLabel = Official STATEC data
+chartH     = <em>Index</em> evolution since 1999
+chartDesc  = Successive application rates of the wage sliding scale. Source: STATEC Luxembourg — statistiques.public.lu
+chartInfo  = Application rates · base 01.01.1948 · Source: STATEC
+
+# Status bar
+sLive = In force
+sLast = Last tranche:
+sCote = Current rate:
+sTrig = Next threshold:
+sNext = Next (forecast):
+sQ    = Q2 2026
+
+# Chart filters
+f10 = 10 years
+f15 = 15 years
+f25 = 25 years
+
+# Mechanism
+howLabel = Mechanism
+howH     = How does the <em>index</em> work?
+h1t = Monthly CPI measurement
+h1b = STATEC tracks ~7,700 prices across ~580 outlets each month. Since 2018, supermarket scanner data (~90,000 additional varieties) supplements the survey.
+h2t = Linking to the 1948 base
+h2b = The national CPI (IPCN) is multiplied by a constant linking factor to obtain the index base 100 = 01.01.1948. This factor changes only when law neutralises specific prices (tobacco excise, CO₂ tax…).
+h3t = Six-month moving average
+h3b = The arithmetic mean of the last 6 linked indices is computed monthly. When it exceeds the trigger threshold (= last rate × 1.025), a new tranche takes effect the following month.
+h4t = Automatic 2.5% raise
+h4b = All wages, salaries and pensions rise by 2.5% from the date of publication. Mandatory public order (Art. L.223-1 Labour Code) — no exceptions whatsoever.
+
+# Calculator
+calcLabel = Interactive tool
+calcH     = Calculate your <em>impact</em>
+calcDesc  = Estimate the effect of one or more wage index tranches on your monthly gross salary.
+lSal      = Monthly gross salary (€)
+lTr       = Number of tranches
+lProj     = Projection period
+lMo       = months
+lTax      = Estimated tax rate
+calcBtn   = Calculate salary impact
+
+# Results
+rpHead = Simulation results
+rBef   = Before indexation
+rAft   = After indexation
+rGb    = Monthly gross gain
+rGn    = Est. monthly net gain
+rPct   = Total increase
+rAnn   = Annual gross gain
+rCum   = Cumulative gain (projection)
+rNote  = Calculated on gross salary. Net gain estimated after the entered tax rate. Indexation also applies to pensions and family benefits. Mandatory public order — Art. L.223-1 Labour Code.
+
+# History
+histLabel = Official STATEC source
+histH     = All <em>tranches</em> since 1988
+histDesc  = Official application rates and trigger thresholds — STATEC press releases and Official Journal.
+cDate     = Valid from
+cApp      = Application rate
+cEch      = Trigger threshold
+cSmw      = Min. wage (unskilled)
+cSmwq     = Min. wage (skilled)
+cGap      = Gap from prev.
+srcNote   = Data from official STATEC press releases and the wage sliding scale published in the Official Journal.
+
+# FAQ
+faqLabel = Frequently asked questions
+faqH     = Everything about the <em>index</em>
+faqs.1.q = When is the next wage index tranche?
+faqs.1.a = According to STATEC forecasts of 9 February 2026, the next tranche is expected in Q2 2026 (central scenario, inflation 1.8%). The trigger threshold is 992.24 points.
+faqs.2.q = How much does each tranche increase salaries?
+faqs.2.a = Each tranche triggers an automatic 2.5% increase in all wages, salaries and pensions, with no exceptions permitted.
+faqs.3.q = What is the current application rate?
+faqs.3.a = The current application rate is 968.04 points (in force since 1 May 2025). The next trigger threshold is 992.24 points.
+faqs.4.q = Does indexation apply to all employees?
+faqs.4.a = Yes. The mechanism is mandatory public order and applies to all private and public sector employers. No downward derogations are possible, even by collective agreement.
+faqs.5.q = How is the six-month moving average calculated?
+faqs.5.a = It is the arithmetic mean of the last 6 linked indices (base 01.01.1948). When it exceeds the trigger threshold, a new tranche takes effect the following month.
+faqs.6.q = Are bonuses also indexed?
+faqs.6.a = Only remuneration elements explicitly indexed in the employment contract or collective agreement are automatically adjusted. Non-indexed bonuses remain unchanged.
+
+# Footer
+footBrand = Index · Luxembourg
+footSrc   = Official source: STATEC Luxembourg · statistiques.public.lu
+footDis   = Informational tool only — data not contractually binding · © 2026
+
+# Utilities
+na     = n/a
+months = months
+
+
+# =============================================================================
+[lb]
+# =============================================================================
+
+# Navigatioun
+navBrand = Index · Lëtzebuerg
+nl1      = Evolutioun
+nl2      = Mechanismus
+nl3      = Rechner
+nl4      = Geschicht
+nl5      = FAQ
+nl6      = Blog
+newsTag   = Aktuell · STATEC Prognosen
+newsTitle = Nächst Indextranche am Q2 2026 erwaart
+newsSub   = No de STATEC Prognosen vum 9. Februar 2026 kënnt déi nächst Tranche (+2,5%) am 2. Quartal 2026 (Basisscenario). Auslöseschwellenwäert: 992,24 Punkten.
+
+# Hero
+heroTag   = Gleitend Lounsskala · Groussherzogtum Lëtzebuerg
+heroTitle = Den <em>Index</em><br>vun de Léin
+heroSub   = Den automatesche Mechanismus fir d'Kafkraaft vun de lëtzebuergesche Salariéen ze schützen, a Kraaft zanter 1921.
+
+# KPIs
+kpi1 = Aktuell Uwëndungsquote
+kpi2 = Nächst Auslöseschwelle
+kpi3 = Erhéijung pro Tranche
+
+# Knäpper
+cta1      = Mäin Impact berechnen
+cta2      = Geschicht gesinn
+scrollCue = Entdecken
+
+# Grafek
+chartLabel = Offiziell STATEC Donnéeën
+chartH     = Evolutioun vum <em>Index</em> zanter 1999
+chartDesc  = Offiziell Uwëndungsquoten vun der gleitender Lounsskala. Quell: STATEC Lëtzebuerg — statistiques.public.lu
+chartInfo  = Uwëndungsquoten · Basis 1.1.1948 · Quell: STATEC
+
+# Statusbar
+sLive = A Kraaft
+sLast = Lescht Tranche:
+sCote = Aktuell Quote:
+sTrig = Nächst Schwelle:
+sNext = Nächst (Prognos):
+sQ    = Q2 2026
+
+# Grafekfilteren
+f10 = 10 Joer
+f15 = 15 Joer
+f25 = 25 Joer
+
+# Mechanismus
+howLabel = Mechanismus
+howH     = Wéi fonctionnéiert den <em>Index</em>?
+h1t = Méinatlech IPC Moossung
+h1b = STATEC verfollegt all Mount ~7.700 Präisser a ~580 Verkafsplazen. Zanter 2018 ergänzen Kassendaten aus Supermäert (~90.000 zousätzlech Varietéiten) d'Erhiewung.
+h2t = Anbindung un d'Basis 1948
+h2b = Den IPCN gëtt mat engem konstante Verbindungsfaktor op d'Basis 100 = 1.1.1948 ëmgerechent. Dëse Faktor ännert sech nëmme bei gesetzlecher Neutraliséierung (Tabakaccisen, CO₂-Steier…).
+h3t = Hallefjoerlecht gleitend Duerchschnëtt
+h3b = Den Duerchschnëtt vun de leschten 6 verknüpfte Indexen gëtt monatslech berechent. Wann en d'Auslöseschwelle iwwerschreift (= lescht Quote × 1,025), trëtt eng nei Tranche am nächste Mount a Kraaft.
+h4t = Automatesch Erhéijung vun 2,5%
+h4b = All Léin, Gehälter a Pensiounen erhéijen sech ëm 2,5% vum Datum vun der Verëffentlechung un. Öffentlech Uerdnung (art. L.223-1 Aarbechtskodex) — keng Ausnamen méiglech.
+
+# Rechner
+calcLabel = Interaktive Tool
+calcH     = Berechent Äre <em>Impact</em>
+calcDesc  = Schätzt d'Auswierkung vun enger oder méi Indextranchen op Ären méinatleche Bruttogehalt.
+lSal      = Méinatleche Bruttogehalt (€)
+lTr       = Unzuel vun Tranchen
+lProj     = Projectionszäitraum
+lMo       = Méint
+lTax      = Geeschätzte Steiersaz
+calcBtn   = Gehaltauswierkung berechnen
+
+# Resultater
+rpHead = Simulatiounsresultater
+rBef   = Virun Indexatioun
+rAft   = No Indexatioun
+rGb    = Méinatleche Bruttogain
+rGn    = Gesch. Nettogain / Mount
+rPct   = Gesamterhéijung
+rAnn   = Jährlecht Bruttogain
+rCum   = Kumuléierte Gain (Projektioun)
+rNote  = Berechnong op Bruttobasis. Nettogain geschätzt no dem agegebene Steiersaz. Gëlt och fir Pensiounen a Familljenzoulagen.
+
+# Historik
+histLabel = Offiziell STATEC Quell
+histH     = All <em>Tranchen</em> zanter 1988
+histDesc  = Offiziell Uwëndungsquoten a Auslöseschwellen — STATEC Pressemitteilungen a Journal Officiel.
+cDate     = Gëlteg vun
+cApp      = Uwëndungsquote
+cEch      = Auslöseschwelle
+cSmw      = Mindestloun (net qualif.)
+cSmwq     = Mindestloun (qualif.)
+cGap      = Intervall zit vir.
+srcNote   = Donnéeën aus offiziellen STATEC Pressemitteilungen an der am Journal Officiel verëffentlechter Lounsskala.
+
+# FAQ
+faqLabel = Dacks gestallt Froen
+faqH     = Alles iwwer den <em>Index</em>
+faqs.1.q = Wéini kënnt déi nächst Indextranche?
+faqs.1.a = No de STATEC Prognosen vum 9. Februar 2026 ass déi nächst Tranche am Q2 2026 erwaart (Basisscenario, Inflatioun 1,8%). D'Auslöseschwelle läit bei 992,24 Punkten.
+faqs.2.q = Wéi vill ginn d'Léin pro Tranche erhéicht?
+faqs.2.a = All Tranche trëtt eng automatesch Erhéijung vun 2,5% vun all Léin, Gehälter a Pensiounen, ouni iergendwelch Ausnamen.
+faqs.3.q = Wat ass déi aktuell Uwëndungsquote?
+faqs.3.a = Déi aktuell Uwëndungsquote ass 968,04 Punkten (a Kraaft zanter dem 1. Mee 2025). Déi nächst Auslöseschwelle ass 992,24 Punkten.
+faqs.4.q = Gëllt d'Indexatioun fir all Salariéen?
+faqs.4.a = Jo. De Mechanismus ass öffentlech Uerdnung a gëllt fir all ëffentlech a privat Aarbeitgeber. Keng Ofwäichungen no ënnen sinn méiglech.
+faqs.5.q = Wéi gëtt den hallefjoerleche Duerchschnëtt berechent?
+faqs.5.a = Et ass den arithmeteschen Duerchschnëtt vun de leschten 6 verknüpfte Indexen (Basis 1.1.1948). Wann en d'Auslöseschwelle iwwerschreift, trëtt eng nei Tranche am nächste Mount a Kraaft.
+faqs.6.q = Ginn och Bonusse indexéiert?
+faqs.6.a = Nëmme vertraglech oder kollektivvertraglech explizit indexéiert Vergütungselementer ginn automatesch ugepasst. Net indexéiert Prämiën bleiwen onverännert.
+
+# Footer
+footBrand = Index · Lëtzebuerg
+footSrc   = Offiziell Quell: STATEC Lëtzebuerg · statistiques.public.lu
+footDis   = Nëmme fir Informatiounszwecker — keng vertraglech Verbindlechkeet · © 2026
+
+# Utility-Wäerter
+na     = n/b
+months = Méint

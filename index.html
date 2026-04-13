@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Index des Salaires Luxembourg · Histoire, Controverses & Avenir</title>
+<meta name="description" content="Articles approfondis sur l'index des salaires au Luxembourg : histoire depuis 1921, mécanismes, controverses économiques et perspectives d'avenir.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://index-luxembourg.lu/blog/">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Blog",
+  "name":"Blog — Index des Salaires Luxembourg",
+  "url":"https://index-luxembourg.lu/blog/",
+  "description":"Articles sur l'histoire, les mécanismes, les controverses et l'avenir de l'index des salaires au Luxembourg.",
+  "publisher":{"@type":"Organization","name":"Index Luxembourg","url":"https://index-luxembourg.lu/"}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2a56;--navy-mid:#1a3a72;--navy-soft:#e8eef8;--navy-pale:#f2f5fb;--navy-ghost:#f7f9fd;
+  --gold:#b8892a;--gold-l:#d4a843;--gold-bg:#fdf6e8;--gold-b:#e8d08a;
+  --text:#0f1c2e;--text-m:#3a4a60;--text-d:#7a8a9e;
+  --border:#dde3ef;--border-m:#c8d0e2;
+  --white:#fff;--r:14px;--r-lg:20px;--r-sm:8px;
+  --sh:0 4px 20px rgba(15,42,86,.09);--sh-sm:0 1px 4px rgba(15,42,86,.06);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--white);color:var(--text);line-height:1.6}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#f0f2f8}::-webkit-scrollbar-thumb{background:#c0cce0;border-radius:3px}
+
+nav{
+  position:sticky;top:0;z-index:100;height:64px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(1.25rem,5vw,3rem);
+  background:rgba(255,255,255,.96);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);box-shadow:var(--sh-sm);
+}
+.nav-brand{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Playfair Display',serif;font-size:17px;font-weight:500;
+  color:var(--navy);text-decoration:none;
+}
+.nav-badge{width:28px;height:28px;border-radius:7px;background:var(--navy);display:flex;align-items:center;justify-content:center}
+.nav-badge svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round}
+.nav-back{
+  font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;color:var(--text-m);
+  text-decoration:none;padding:6px 14px;border-radius:20px;border:1.5px solid var(--border);
+  transition:all .18s;display:flex;align-items:center;gap:6px;
+}
+.nav-back:hover{color:var(--navy);border-color:var(--navy);background:var(--navy-soft)}
+
+.hero{
+  background:var(--navy-ghost);
+  padding:clamp(4rem,8vw,6rem) clamp(1.25rem,6vw,4rem) clamp(3rem,5vw,4rem);
+  position:relative;overflow:hidden;
+}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);
+  background-size:68px 68px;opacity:.5;
+  mask-image:radial-gradient(ellipse 100% 100% at 50% 50%,black 30%,transparent 100%);
+}
+.hero-inner{max-width:860px;margin:0 auto;position:relative;z-index:1}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:1.5rem;
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);
+  padding:6px 16px 6px 8px;border:1.5px solid var(--border-m);border-radius:24px;
+  background:var(--white);box-shadow:var(--sh-sm);
+}
+.hero-tag-d{width:20px;height:20px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center}
+.hero-tag-d span{width:6px;height:6px;border-radius:50%;background:var(--white);display:block}
+h1{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);font-weight:400;color:var(--navy);line-height:1.1;margin-bottom:1rem}
+h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:16px;color:var(--text-m);max-width:520px;line-height:1.75;font-weight:300}
+
+.main{max-width:1100px;margin:0 auto;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,5vw,3rem)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.75rem}
+
+.card{
+  background:var(--white);border:1.5px solid var(--border);border-radius:var(--r-lg);
+  overflow:hidden;transition:all .25s;display:flex;flex-direction:column;
+  text-decoration:none;color:inherit;
+}
+.card:hover{box-shadow:var(--sh);border-color:var(--border-m);transform:translateY(-3px)}
+.card-thumb{
+  height:180px;display:flex;align-items:flex-end;justify-content:flex-start;
+  padding:1.25rem;position:relative;overflow:hidden;
+}
+.card-thumb-bg{position:absolute;inset:0}
+.card-num{
+  font-family:'Playfair Display',serif;
+  position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);
+  font-size:96px;font-weight:400;line-height:1;
+  color:rgba(255,255,255,0.1);pointer-events:none;letter-spacing:-.02em;
+}
+.card-cat{
+  position:relative;z-index:1;
+  font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:4px 12px;border-radius:20px;color:var(--white);
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);
+  backdrop-filter:blur(8px);
+}
+.card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column;gap:.75rem}
+.card-meta{font-size:11px;color:var(--text-d);font-weight:500;display:flex;align-items:center;gap:8px}
+.card-meta-dot{width:3px;height:3px;border-radius:50%;background:var(--border-m)}
+.card-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:var(--navy);line-height:1.25}
+.card-title em{font-style:italic;color:var(--gold)}
+.card-excerpt{font-size:13px;color:var(--text-m);line-height:1.7;font-weight:300;flex:1}
+.card-cta{
+  display:inline-flex;align-items:center;gap:6px;margin-top:.25rem;
+  font-size:13px;font-weight:600;color:var(--navy);
+}
+.card-arrow{width:18px;height:18px;border-radius:50%;background:var(--navy-soft);display:flex;align-items:center;justify-content:center;transition:all .2s}
+.card:hover .card-arrow{background:var(--navy);color:var(--white)}
+.card-arrow svg{width:9px;height:9px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+
+footer{background:var(--navy);padding:2.5rem clamp(1.25rem,6vw,4rem)}
+.fi{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.fb{font-family:'Playfair Display',serif;font-size:17px;color:rgba(255,255,255,.8)}
+.fd{font-size:12px;color:rgba(255,255,255,.4);line-height:1.8;text-align:right}
+.fd a{color:rgba(255,255,255,.5);text-decoration:none}
+.fd a:hover{color:var(--white)}
+
+.up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.up.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html" aria-label="Index Luxembourg — Accueil">
+    <div class="nav-badge" aria-hidden="true">
+      <svg viewBox="0 0 16 16"><polyline points="2,11 6,6 9,9 14,3"/></svg>
+    </div>
+    Index · Luxembourg
+  </a>
+  <div class="nav-links" role="navigation" aria-label="Navigation principale">
+    <a class="nl" href="../index.html#chart-s">Évolution</a>
+    <a class="nl" href="../index.html#how-s">Mécanisme</a>
+    <a class="nl" href="../index.html#calc-s">Calculateur</a>
+    <a class="nl" href="../index.html#hist-s">Historique</a>
+    <a class="nl" href="../index.html#faq-s">FAQ</a>
+    <span class="nav-sep" aria-hidden="true"></span>
+    <a class="nl nav-blog nav-blog-active" href="index.html">Blog</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-tag"><div class="hero-tag-d"><span></span></div>Analyses & Éclairages</div>
+    <h1>Le <em>Blog</em> de l'Index</h1>
+    <p class="hero-sub">Histoire, controverses et avenir de l'échelle mobile des salaires au Luxembourg — analyses approfondies fondées sur les données officielles STATEC.</p>
+  </div>
+</header>
+
+<main class="main">
+  <div class="grid">
+
+    <!-- Article 1 -->
+    <a class="card up" href="histoire-1921.html">
+      <div class="card-thumb">
+        <div class="card-thumb-bg" style="background:linear-gradient(135deg,#0a1e40,#1a3a72)"></div>
+        <div class="card-num">1921</div>
+        <span class="card-cat">Histoire</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span>15 mars 2026</span>
+          <span class="card-meta-dot"></span>
+          <span>8 min de lecture</span>
+        </div>
+        <div class="card-title">Naissance d'un <em>mécanisme</em> unique en Europe</div>
+        <p class="card-excerpt">Comment le Luxembourg a inventé en 1921 un système d'indexation des salaires qui allait résister à deux guerres mondiales, des crises économiques majeures et un siècle de débats politiques.</p>
+        <div class="card-cta">
+          Lire l'article
+          <div class="card-arrow"><svg viewBox="0 0 10 10"><path d="M2 5h6M5 2l3 3-3 3"/></svg></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 2 -->
+    <a class="card up" href="crise-2022.html" style="transition-delay:.08s">
+      <div class="card-thumb">
+        <div class="card-thumb-bg" style="background:linear-gradient(135deg,#5c1a0a,#a83210)"></div>
+        <div class="card-num">2022</div>
+        <span class="card-cat">Crise</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span>28 mars 2026</span>
+          <span class="card-meta-dot"></span>
+          <span>10 min de lecture</span>
+        </div>
+        <div class="card-title">2022–2023 : quand l'<em>inflation</em> a tout embrasé</div>
+        <p class="card-excerpt">Quatre tranches en moins de dix-huit mois. La flambée post-Covid des prix de l'énergie et des denrées alimentaires a mis l'index sous une pression sans précédent depuis les années 1980, révélant ses forces et ses limites.</p>
+        <div class="card-cta">
+          Lire l'article
+          <div class="card-arrow"><svg viewBox="0 0 10 10"><path d="M2 5h6M5 2l3 3-3 3"/></svg></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 3 -->
+    <a class="card up" href="controverses.html" style="transition-delay:.16s">
+      <div class="card-thumb">
+        <div class="card-thumb-bg" style="background:linear-gradient(135deg,#1a3a0a,#2d6b12)"></div>
+        <div class="card-num">±</div>
+        <span class="card-cat">Débat</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span>5 avril 2026</span>
+          <span class="card-meta-dot"></span>
+          <span>12 min de lecture</span>
+        </div>
+        <div class="card-title">Les <em>controverses</em> qui n'en finissent pas</div>
+        <p class="card-excerpt">Patronat contre syndicats, FMI contre gouvernement, économistes libéraux contre défenseurs du modèle social. Le tour complet des arguments pour et contre l'index, de 1975 à aujourd'hui.</p>
+        <div class="card-cta">
+          Lire l'article
+          <div class="card-arrow"><svg viewBox="0 0 10 10"><path d="M2 5h6M5 2l3 3-3 3"/></svg></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Article 4 -->
+    <a class="card up" href="futur.html" style="transition-delay:.24s">
+      <div class="card-thumb">
+        <div class="card-thumb-bg" style="background:linear-gradient(135deg,#0f2a56,#b8892a)"></div>
+        <div class="card-num">2030</div>
+        <span class="card-cat">Avenir</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span>10 avril 2026</span>
+          <span class="card-meta-dot"></span>
+          <span>9 min de lecture</span>
+        </div>
+        <div class="card-title">L'index à l'horizon <em>2030</em> et au-delà</div>
+        <p class="card-excerpt">Intelligence artificielle, green deal, pression compétitive européenne : l'index luxembourgeois peut-il survivre intact dans une économie radicalement transformée ? Scénarios et pistes de réforme.</p>
+        <div class="card-cta">
+          Lire l'article
+          <div class="card-arrow"><svg viewBox="0 0 10 10"><path d="M2 5h6M5 2l3 3-3 3"/></svg></div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <div class="fi">
+    <div class="fb">Index · Luxembourg</div>
+    <div class="fd">
+      <a href="https://statistiques.public.lu" target="_blank" rel="noopener">statistiques.public.lu ↗</a><br>
+      Données STATEC · Outil informatif · © 2026
+    </div>
+  </div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.1});
+document.querySelectorAll('.up').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

@@ -29,13 +29,13 @@
 # =============================================================================
 
 # Navigation
-navBrand = Index · Luxembourg
+navBrand = IndexTranche.lu
 nl1      = Évolution
 nl2      = Mécanisme
 nl3      = Calculateur
 nl4      = Historique
 nl5      = FAQ
-nl6      = Blog d'actualité (news banner)
+nl6      = Blog
 newsTag   = Actualité · Prévisions STATEC
 newsTitle = Prochaine tranche indiciaire attendue au Q2 2026
 newsSub   = Selon les prévisions STATEC du 9 février 2026, la prochaine tranche (+2,5%) interviendrait au 2e trimestre 2026 (scénario central). Cote déclencheuse : 992,24 pts.
@@ -110,7 +110,7 @@ rNote  = Calcul sur salaire brut. Gain net estimé après le taux d'imposition s
 
 # Historique
 histLabel = Source officielle STATEC
-histH     = Toutes les <em>tranches</em> depuis 1988
+histH     = Toutes les <em>tranches</em> depuis 1948
 histDesc  = Cotes d'application et cotes d'échéance officielles — communiqués STATEC et Journal Officiel.
 cDate     = Date d'entrée
 cApp      = Cote d'application
@@ -137,7 +137,7 @@ faqs.6.q = Les primes sont-elles aussi indexées ?
 faqs.6.a = Seuls les éléments de rémunération explicitement indexés dans le contrat ou la convention collective le sont. Les primes non contractuellement indexées ne sont pas automatiquement revalorisées.
 
 # Pied de page
-footBrand = Index · Luxembourg
+footBrand = IndexTranche.lu
 footSrc   = Source officielle : STATEC Luxembourg · statistiques.public.lu
 footDis   = Outil informatif — données non contractuelles · © 2026
 
@@ -151,7 +151,7 @@ months = mois
 # =============================================================================
 
 # Navigation
-navBrand = Index · Luxemburg
+navBrand = IndexTranche.lu
 nl1      = Entwicklung
 nl2      = Mechanismus
 nl3      = Rechner
@@ -232,7 +232,7 @@ rNote  = Berechnung auf Bruttobasis. Nettogewinn nach dem eingegebenen Steuersat
 
 # Historik
 histLabel = Offizielle STATEC-Quelle
-histH     = Alle <em>Tranchen</em> seit 1988
+histH     = Alle <em>Tranchen</em> seit 1948
 histDesc  = Offizielle Anwendungspunkte und Auslöseschwellen — STATEC-Pressemitteilungen und Amtsblatt.
 cDate     = Gültig ab
 cApp      = Anwendungspunkt
@@ -259,7 +259,7 @@ faqs.6.q = Werden auch Boni indexiert?
 faqs.6.a = Nur vertraglich oder tariflich explizit indexierte Vergütungselemente werden automatisch angepasst. Nicht indexierte Prämien bleiben unverändert.
 
 # Fußzeile
-footBrand = Index · Luxemburg
+footBrand = IndexTranche.lu
 footSrc   = Offizielle Quelle: STATEC Luxemburg · statistiques.public.lu
 footDis   = Nur zu Informationszwecken — nicht rechtsverbindlich · © 2026
 
@@ -273,7 +273,7 @@ months = Monate
 # =============================================================================
 
 # Navigation
-navBrand = Index · Luxembourg
+navBrand = IndexTranche.lu
 nl1      = Evolution
 nl2      = Mechanism
 nl3      = Calculator
@@ -354,7 +354,7 @@ rNote  = Calculated on gross salary. Net gain estimated after the entered tax ra
 
 # History
 histLabel = Official STATEC source
-histH     = All <em>tranches</em> since 1988
+histH     = All <em>tranches</em> since 1948
 histDesc  = Official application rates and trigger thresholds — STATEC press releases and Official Journal.
 cDate     = Valid from
 cApp      = Application rate
@@ -381,7 +381,7 @@ faqs.6.q = Are bonuses also indexed?
 faqs.6.a = Only remuneration elements explicitly indexed in the employment contract or collective agreement are automatically adjusted. Non-indexed bonuses remain unchanged.
 
 # Footer
-footBrand = Index · Luxembourg
+footBrand = IndexTranche.lu
 footSrc   = Official source: STATEC Luxembourg · statistiques.public.lu
 footDis   = Informational tool only — data not contractually binding · © 2026
 
@@ -395,7 +395,7 @@ months = months
 # =============================================================================
 
 # Navigatioun
-navBrand = Index · Lëtzebuerg
+navBrand = IndexTranche.lu
 nl1      = Evolutioun
 nl2      = Mechanismus
 nl3      = Rechner
@@ -476,7 +476,7 @@ rNote  = Berechnong op Bruttobasis. Nettogain geschätzt no dem agegebene Steier
 
 # Historik
 histLabel = Offiziell STATEC Quell
-histH     = All <em>Tranchen</em> zanter 1988
+histH     = All <em>Tranchen</em> zanter 1948
 histDesc  = Offiziell Uwëndungsquoten a Auslöseschwellen — STATEC Pressemitteilungen a Journal Officiel.
 cDate     = Gëlteg vun
 cApp      = Uwëndungsquote
@@ -503,7 +503,7 @@ faqs.6.q = Ginn och Bonusse indexéiert?
 faqs.6.a = Nëmme vertraglech oder kollektivvertraglech explizit indexéiert Vergütungselementer ginn automatesch ugepasst. Net indexéiert Prämiën bleiwen onverännert.
 
 # Footer
-footBrand = Index · Lëtzebuerg
+footBrand = IndexTranche.lu
 footSrc   = Offiziell Quell: STATEC Lëtzebuerg · statistiques.public.lu
 footDis   = Nëmme fir Informatiounszwecker — keng vertraglech Verbindlechkeet · © 2026
 

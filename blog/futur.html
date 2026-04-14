@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IndexTranche — L'index à l'horizon 2030et au-delà</title>
+<meta name="description" content="IA, transition climatique, pression compétitive européenne : l'index luxembourgeois peut-il survivre intact dans une économie radicalement transformée ? Scénari">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.indextranche.lu/blog/futur.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f2a56;--navy-mid:#1a3a72;--navy-soft:#e8eef8;--navy-pale:#f2f5fb;--navy-ghost:#f7f9fd;--gold:#b8892a;--gold-l:#d4a843;--gold-bg:#fdf6e8;--gold-b:#e8d08a;--text:#0f1c2e;--text-m:#3a4a60;--text-d:#7a8a9e;--border:#dde3ef;--border-m:#c8d0e2;--white:#fff;--r:14px;--r-lg:20px;--r-sm:8px;--sh:0 4px 20px rgba(15,42,86,.09);--sh-sm:0 1px 4px rgba(15,42,86,.06);--col:680px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--white);color:var(--text);line-height:1.6}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#f0f2f8}::-webkit-scrollbar-thumb{background:#c0cce0;border-radius:3px}
+nav{position:sticky;top:0;z-index:100;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1.25rem,5vw,3rem);background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);box-shadow:var(--sh-sm)}
+.nav-brand{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-size:17px;font-weight:500;color:var(--navy);text-decoration:none}
+.nav-badge{width:28px;height:28px;border-radius:7px;background:var(--navy);display:flex;align-items:center;justify-content:center}
+.nav-badge svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nl{font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;color:var(--text-m);background:none;border:none;cursor:pointer;padding:6px 12px;border-radius:20px;transition:all .18s;text-decoration:none;display:inline-flex;align-items:center}
+.nl:hover{color:var(--navy);background:var(--navy-soft)}
+.nav-sep{display:block;width:1px;height:16px;background:var(--border);margin:0 4px;flex-shrink:0}
+.nav-blog{font-weight:600;color:var(--navy) !important}
+.nav-blog-active{background:var(--navy-soft)}
+.hero{background:linear-gradient(135deg,#0f2a56 0%,#b8892a 100%);padding:clamp(4rem,8vw,6rem) clamp(1.25rem,6vw,4rem);position:relative;overflow:hidden}
+.hero-noise{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:24px 24px}
+.hero-inner{max-width:var(--col);margin:0 auto;position:relative;z-index:1}
+.hero-crumb{display:flex;align-items:center;gap:8px;margin-bottom:1.5rem;font-size:12px;color:rgba(255,255,255,.5)}
+.hero-crumb a{color:rgba(255,255,255,.5);text-decoration:none;transition:color .18s}.hero-crumb a:hover{color:rgba(255,255,255,.8)}.hero-crumb-sep{opacity:.4}
+.hero-cat{display:inline-flex;align-items:center;gap:6px;margin-bottom:1.25rem;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ffe090;padding:4px 12px;border:1px solid rgba(255,210,80,.4);border-radius:20px;background:rgba(255,210,80,.1)}
+.hero-cat-dot{width:5px;height:5px;border-radius:50%;background:#ffe090}
+h1{font-family:'Playfair Display',serif;font-size:clamp(28px,4.5vw,48px);font-weight:400;color:#fff;line-height:1.12;margin-bottom:1.25rem}
+h1 em{font-style:italic;color:#ffe090}
+.hero-meta{display:flex;align-items:center;gap:12px;font-size:13px;color:rgba(255,255,255,.55);flex-wrap:wrap}.hero-meta-sep{opacity:.4}
+.hero-lead{margin-top:1.5rem;font-size:17px;color:rgba(255,255,255,.75);line-height:1.75;font-weight:300;border-left:3px solid rgba(255,210,80,.5);padding-left:1.25rem}
+.article{max-width:var(--col);margin:0 auto;padding:clamp(3rem,6vw,5rem) clamp(1.25rem,5vw,2rem)}
+.article h2{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,30px);font-weight:400;color:var(--navy);margin:2.5rem 0 1rem;line-height:1.2}
+.article h2 em{font-style:italic;color:var(--gold)}
+.article h3{font-size:16px;font-weight:600;color:var(--navy);margin:2rem 0 .75rem}
+.article p{font-size:16px;color:var(--text-m);line-height:1.85;margin-bottom:1.25rem;font-weight:300}
+.article p strong{color:var(--text);font-weight:600}
+.article ul,.article ol{margin:0 0 1.25rem 1.5rem}
+.article li{font-size:15px;color:var(--text-m);line-height:1.8;margin-bottom:.4rem;font-weight:300}
+.pullquote{background:var(--navy-ghost);border-left:4px solid var(--gold);border-radius:0 var(--r) var(--r) 0;padding:1.5rem 1.75rem;margin:2rem 0}
+.pullquote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--navy);line-height:1.6;margin:0;font-weight:400}
+.pullquote cite{display:block;margin-top:.75rem;font-size:12px;font-weight:600;color:var(--text-d);letter-spacing:.06em;text-transform:uppercase;font-style:normal}
+.callout{background:var(--gold-bg);border:1.5px solid var(--gold-b);border-radius:var(--r);padding:1.25rem 1.5rem;margin:2rem 0}
+.callout-title{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.callout p{font-size:14px;color:var(--text-m);margin:0;line-height:1.7;font-weight:300}
+.scenario-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:2rem 0}
+.scenario{border-radius:var(--r);padding:1.5rem;border:1.5px solid var(--border);position:relative;overflow:hidden}
+.scenario::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.scenario.a::before{background:linear-gradient(90deg,#1a3a72,#3a6fbf)}
+.scenario.b::before{background:linear-gradient(90deg,var(--gold),var(--gold-l))}
+.scenario.c::before{background:linear-gradient(90deg,#b02020,#e05040)}
+.scenario-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-d);margin-bottom:.5rem}
+.scenario-title{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:.75rem}
+.scenario-body{font-size:13px;color:var(--text-m);line-height:1.7;font-weight:300}
+.challenge-list{margin:2rem 0;display:flex;flex-direction:column;gap:.875rem}
+.challenge{display:flex;gap:1rem;padding:1.25rem;background:var(--navy-ghost);border:1.5px solid var(--border);border-radius:var(--r);align-items:flex-start}
+.challenge-icon{width:36px;height:36px;border-radius:var(--r-sm);background:var(--navy-soft);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.challenge-content{}
+.challenge-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:.3rem}
+.challenge-text{font-size:13px;color:var(--text-m);line-height:1.65;font-weight:300}
+.article-nav{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)}
+.anav{text-decoration:none;padding:1.25rem;border:1.5px solid var(--border);border-radius:var(--r);transition:all .2s;display:flex;flex-direction:column;gap:.4rem}
+.anav:hover{border-color:var(--border-m);box-shadow:var(--sh-sm);transform:translateY(-2px)}
+.anav-dir{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-d)}
+.anav-title{font-size:14px;font-weight:500;color:var(--navy);line-height:1.3}
+.anav.next{text-align:right}
+footer{background:var(--navy);padding:2.5rem clamp(1.25rem,6vw,4rem)}
+.fi{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.fb{font-family:'Playfair Display',serif;font-size:17px;color:rgba(255,255,255,.8)}
+.fd{font-size:12px;color:rgba(255,255,255,.4);text-align:right}
+.fd a{color:rgba(255,255,255,.5);text-decoration:none}
+@media(max-width:600px){.article-nav{grid-template-columns:1fr}.anav.next{text-align:left}}
+
+.lang-block{display:none}
+.lang-block.active{display:block}
+.nav-langs{display:flex;align-items:center;gap:4px;margin-left:8px;padding-left:10px;border-left:1px solid var(--border)}
+.lbtn{font-family:'Manrope',sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--text-d);background:none;border:1.5px solid transparent;cursor:pointer;padding:4px 9px;border-radius:16px;transition:all .18s}
+.lbtn:hover{color:var(--navy);border-color:var(--border-m)}
+.lbtn.active{color:var(--navy);border-color:var(--navy);background:var(--navy-soft)}</style>
+</head>
+<body>
+<nav>
+  <a class="nav-brand" href="../index.html" aria-label="IndexTranche — Accueil">
+    <div class="nav-badge" aria-hidden="true">
+      <svg viewBox="0 0 16 16"><polyline points="2,11 6,6 9,9 14,3"/></svg>
+    </div>
+    IndexTranche · Luxembourg
+  </a>
+  <div class="nav-links" role="navigation" aria-label="Navigation principale">
+    <a class="nl" href="../index.html#chart-s">Évolution</a>
+    <a class="nl" href="../index.html#how-s">Mécanisme</a>
+    <a class="nl" href="../index.html#calc-s">Calculateur</a>
+    <a class="nl" href="../index.html#hist-s">Historique</a>
+    <a class="nl" href="../index.html#faq-s">FAQ</a>
+    <span class="nav-sep" aria-hidden="true"></span>
+    <a class="nl nav-blog nav-blog-active" href="../blog.html">Blog</a>
+  </div>
+    <div class="nav-langs">
+      <button class="lbtn" onclick="switchLang('fr')">FR</button>
+      <button class="lbtn" onclick="switchLang('de')">DE</button>
+      <button class="lbtn" onclick="switchLang('en')">EN</button>
+      <button class="lbtn" onclick="switchLang('lb')">LU</button>
+    </div>
+</nav>
+<header class="hero" style="background:linear-gradient(135deg,#0f2a56,#b8892a)">
+  <div class="hero-noise" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <nav class="hero-crumb" aria-label="Fil d'Ariane">
+      <a href="../index.html">Accueil</a>
+      <span class="hero-crumb-sep">›</span>
+      <a href="../blog.html">Blog</a>
+      <span class="hero-crumb-sep">›</span>
+      <span>Avenir</span>
+    </nav>
+    <div class="lang-block" data-lang="fr">
+    <div class="hero-cat"><span class="hero-cat-dot"></span>Avenir</div>
+    <h1>L'index à l'horizon <em>2030</em><br>et au-delà</h1>
+    <div class="hero-meta"><span>10 avril 2026</span><span class="hero-meta-sep">·</span><span>9 min</span><span class="hero-meta-sep">·</span><span>Source : STATEC Luxembourg</span></div>
+    <p class="hero-lead">IA, transition climatique, pression compétitive européenne : l'index luxembourgeois peut-il survivre intact dans une économie radicalement transformée ? Scénarios et pistes de réforme.</p>
+  </div>
+    <div class="lang-block" data-lang="de">
+    <div class="hero-cat"><span class="hero-cat-dot"></span>Zukunft</div>
+    <h1>Der Index bis <em>2030</em><br>und darüber hinaus</h1>
+    <div class="hero-meta"><span>10. April 2026</span><span class="hero-meta-sep">·</span><span>9 Min.</span><span class="hero-meta-sep">·</span><span>Quelle: STATEC Luxemburg</span></div>
+    <p class="hero-lead">KI, Klimawandel, europäischer Wettbewerbsdruck: Kann der luxemburgische Index in einer radikal veränderten Wirtschaft unverändert überleben? Szenarien und Reformansätze.</p>
+  </div>
+    <div class="lang-block" data-lang="en">
+    <div class="hero-cat"><span class="hero-cat-dot"></span>Future</div>
+    <h1>The index looking to <em>2030</em><br>and beyond</h1>
+    <div class="hero-meta"><span>10 April 2026</span><span class="hero-meta-sep">·</span><span>9 min</span><span class="hero-meta-sep">·</span><span>Source: STATEC Luxembourg</span></div>
+    <p class="hero-lead">AI, climate transition, European competitive pressure: can the Luxembourg index survive intact in a radically transformed economy? Scenarios and reform tracks.</p>
+  </div>
+  </div>
+</header>
+<article class="article">
+  <div class="lang-block" data-lang="fr"><h2>Les défis structurels qui s'accumulent</h2>
+<div class="challenge-list"><div class="challenge"><div class="challenge-icon">🤖</div><div class="challenge-content"><div class="challenge-title">L'intelligence artificielle et la polarisation de l'emploi</div><div class="challenge-text">L'IA automatise en priorité les tâches cognitives routinières — précisément celles qui constituent une part importante de l'emploi dans le secteur financier luxembourgeois. Si les emplois de back-office disparaissent, la structure salariale se polarise et un index uniforme à 2,5% devient inadapté à cette réalité.</div></div></div><div class="challenge"><div class="challenge-icon">🌱</div><div class="challenge-content"><div class="challenge-title">La transition climatique et la taxe CO₂</div><div class="challenge-text">Le Luxembourg s'est engagé à atteindre la neutralité carbone d'ici 2050, impliquant une hausse continue de la taxe CO₂. Si elle n'est pas neutralisée, elle devient un déclencheur d'index récurrent. Si elle l'est, les ménages pauvres ne sont plus protégés contre la hausse réelle de leur coût de la vie.</div></div></div><div class="challenge"><div class="challenge-icon">🇪🇺</div><div class="challenge-content"><div class="challenge-title">La pression européenne sur les coûts salariaux</div><div class="challenge-text">La concurrence fiscale intra-européenne et l'attractivité croissante de l'Irlande ou de Malte pour les services financiers exercent une pression permanente sur les coûts opérationnels. Des coûts salariaux indexés automatiquement deviennent un argument de délocalisation.</div></div></div></div>
+<h2>Trois <em>scénarios</em> pour 2030</h2>
+<div class="scenario-grid"><div class="scenario a"><div class="scenario-label">Scénario A</div><div class="scenario-title">Continuité adaptative</div><div class="scenario-body">L'index survit dans ses grandes lignes. Des ajustements techniques continuent sans réforme structurelle. La croissance économique et la paix sociale permettent d'en absorber les coûts.</div></div><div class="scenario b"><div class="scenario-label">Scénario B</div><div class="scenario-title">Réforme modérée</div><div class="scenario-body">Un accord tripartite instaure un plafonnement de l'assiette indexée, une fréquence maximale d'une tranche par an, et un mécanisme de dérogation sectorielle. L'esprit est préservé, le coût maîtrisé.</div></div><div class="scenario c"><div class="scenario-label">Scénario C</div><div class="scenario-title">Crise et rupture</div><div class="scenario-body">Une crise économique majeure force une suspension prolongée. Si la reprise tarde, la suspension devient permanente.</div></div></div>
+<h2>Ce qui ne changera probablement pas</h2>
+<p>L'index bénéficie d'un soutien populaire massif au Luxembourg. Sa suppression pure et simple est politiquement impensable à court terme. La question n'est pas de savoir s'il survivra jusqu'en 2030, mais sous quelle forme.</p>
+<div class="pullquote"><p>« L'index n'est pas qu'un mécanisme économique. C'est un contrat social. Et les contrats sociaux ne se brisent pas — ils se renégocient. »</p><cite>Analyse éditoriale — IndexTranche, 2026</cite></div></div>
+  <div class="lang-block" data-lang="de"><h2>Die sich häufenden strukturellen Herausforderungen</h2>
+<div class="challenge-list"><div class="challenge"><div class="challenge-icon">🤖</div><div class="challenge-content"><div class="challenge-title">Künstliche Intelligenz und Arbeitspolarisierung</div><div class="challenge-text">KI automatisiert vorrangig routinemäßige kognitive Aufgaben — genau jene, die einen erheblichen Teil der Beschäftigung im luxemburgischen Finanzsektor ausmachen. Wenn Back-Office-Jobs verschwinden, polarisiert sich die Lohnstruktur, und ein einheitlicher Index von 2,5% wird dieser Realität nicht gerecht.</div></div></div><div class="challenge"><div class="challenge-icon">🌱</div><div class="challenge-content"><div class="challenge-title">Klimawandel und CO₂-Steuer</div><div class="challenge-text">Luxemburg hat sich verpflichtet, bis 2050 klimaneutral zu werden, was einen kontinuierlichen Anstieg der CO₂-Steuer erfordert. Wird sie nicht neutralisiert, wird sie zu einem wiederkehrenden Indextriggerer. Wird sie neutralisiert, sind einkommensschwache Haushalte nicht mehr gegen reale Kostensteigerungen geschützt.</div></div></div><div class="challenge"><div class="challenge-icon">🇪🇺</div><div class="challenge-content"><div class="challenge-title">Europäischer Wettbewerbsdruck auf Lohnkosten</div><div class="challenge-text">Der innereuropäische Steuerwettbewerb und die wachsende Attraktivität von Irland oder Malta für Finanzdienstleistungen üben dauerhaften Druck auf operative Kosten aus. Automatisch indexierte Lohnkosten werden zum Verlagerungsargument.</div></div></div></div>
+<h2>Drei <em>Szenarien</em> für 2030</h2>
+<div class="scenario-grid"><div class="scenario a"><div class="scenario-label">Szenario A</div><div class="scenario-title">Adaptive Kontinuität</div><div class="scenario-body">Der Index überlebt in seinen Grundzügen. Technische Anpassungen ohne Strukturreform. Wirtschaftswachstum und sozialer Friede ermöglichen die Absorption der Kosten.</div></div><div class="scenario b"><div class="scenario-label">Szenario B</div><div class="scenario-title">Moderate Reform</div><div class="scenario-body">Ein tripartites Abkommen führt eine Deckelung der indexierten Bemessungsgrundlage, maximal eine Tranche pro Jahr und sektorielle Ausnahmeregelungen ein.</div></div><div class="scenario c"><div class="scenario-label">Szenario C</div><div class="scenario-title">Krise und Bruch</div><div class="scenario-body">Eine schwere Wirtschaftskrise erzwingt eine längere Aussetzung. Erholt sich die Wirtschaft nicht, wird die Aussetzung dauerhaft.</div></div></div>
+<h2>Was sich wahrscheinlich nicht ändern wird</h2>
+<p>Der Index genießt in Luxemburg breite Unterstützung in der Bevölkerung. Seine schlichte Abschaffung ist kurzfristig politisch undenkbar. Die Frage ist nicht, ob er bis 2030 überleben wird, sondern in welcher Form.</p>
+<div class="pullquote"><p>„Der Index ist nicht nur ein wirtschaftlicher Mechanismus. Er ist ein Gesellschaftsvertrag. Und Gesellschaftsverträge brechen nicht — sie werden neu verhandelt."</p><cite>Redaktionelle Analyse — IndexTranche, 2026</cite></div></div>
+  <div class="lang-block" data-lang="en"><h2>The accumulating structural challenges</h2>
+<div class="challenge-list"><div class="challenge"><div class="challenge-icon">🤖</div><div class="challenge-content"><div class="challenge-title">Artificial intelligence and employment polarisation</div><div class="challenge-text">AI automates routine cognitive tasks first — precisely those that make up a significant share of employment in Luxembourg's financial sector. If back-office jobs disappear, the wage structure polarises and a uniform 2.5% index becomes ill-suited to this reality.</div></div></div><div class="challenge"><div class="challenge-icon">🌱</div><div class="challenge-content"><div class="challenge-title">Climate transition and the CO₂ tax</div><div class="challenge-text">Luxembourg is committed to carbon neutrality by 2050, implying a continuous rise in the CO₂ tax. If not neutralised, it becomes a recurring index trigger. If neutralised, low-income households are no longer protected against real cost-of-living increases.</div></div></div><div class="challenge"><div class="challenge-icon">🇪🇺</div><div class="challenge-content"><div class="challenge-title">European pressure on wage costs</div><div class="challenge-text">Intra-European tax competition and the growing attractiveness of Ireland or Malta for financial services exert permanent pressure on operating costs. Automatically indexed wage costs become a relocation argument.</div></div></div></div>
+<h2>Three <em>scenarios</em> for 2030</h2>
+<div class="scenario-grid"><div class="scenario a"><div class="scenario-label">Scenario A</div><div class="scenario-title">Adaptive continuity</div><div class="scenario-body">The index survives in its broad outline. Technical adjustments continue without structural reform. Economic growth and social peace allow the costs to be absorbed.</div></div><div class="scenario b"><div class="scenario-label">Scenario B</div><div class="scenario-title">Moderate reform</div><div class="scenario-body">A tripartite agreement establishes a cap on the indexed base, a maximum of one tranche per year, and sectoral derogation mechanisms. The spirit is preserved, the cost controlled.</div></div><div class="scenario c"><div class="scenario-label">Scenario C</div><div class="scenario-title">Crisis and rupture</div><div class="scenario-body">A major economic crisis forces a prolonged suspension. If recovery is slow, the suspension becomes permanent.</div></div></div>
+<h2>What will probably not change</h2>
+<p>The index enjoys massive popular support in Luxembourg. Its outright abolition is politically unthinkable in the short term. The question is not whether it will survive to 2030, but in what form.</p>
+<div class="pullquote"><p>"The index is not just an economic mechanism. It is a social contract. And social contracts do not break — they are renegotiated."</p><cite>Editorial analysis — IndexTranche, 2026</cite></div></div>
+  <div class="lang-block" data-lang="fr">
+    <div class="article-nav">
+      <a class="anav" href="controverses.html"><div class="anav-dir">← Article précédent</div><div class="anav-title">Les controverses qui n'en finissent pas</div></a>
+      <a class="anav next" href="../blog.html"><div class="anav-dir">Retour au blog →</div><div class="anav-title">Retour au blog</div></a>
+    </div>
+  </div>
+  <div class="lang-block" data-lang="de">
+    <div class="article-nav">
+      <a class="anav" href="controverses.html"><div class="anav-dir">← Vorheriger Artikel</div><div class="anav-title">Die endlosen Kontroversen</div></a>
+      <a class="anav next" href="../blog.html"><div class="anav-dir">Zurück zum Blog →</div><div class="anav-title">Zurück zum Blog</div></a>
+    </div>
+  </div>
+  <div class="lang-block" data-lang="en">
+    <div class="article-nav">
+      <a class="anav" href="controverses.html"><div class="anav-dir">← Previous article</div><div class="anav-title">The controversies that never end</div></a>
+      <a class="anav next" href="../blog.html"><div class="anav-dir">Back to blog →</div><div class="anav-title">Back to blog</div></a>
+    </div>
+  </div>
+</article>
+<footer>
+  <div class="fi">
+    <div class="fb">IndexTranche</div>
+    <div class="fd"><a href="https://statistiques.public.lu" target="_blank" rel="noopener">statistiques.public.lu ↗</a><br>© 2026</div>
+  </div>
+</footer>
+<script>
+(function(){
+  var cur=localStorage.getItem('ixLang')||'fr';
+  function apply(l){
+    cur=l; localStorage.setItem('ixLang',l);
+    var d=(l==='lb')?'fr':l;
+    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===d)});
+    document.querySelectorAll('.lbtn').forEach(function(b){var m=b.getAttribute('onclick')||'';b.classList.toggle('active',m.indexOf("'"+l+"'")>-1)});
+    document.documentElement.lang=l;
+  }
+  window.switchLang=apply;
+  document.addEventListener('DOMContentLoaded',function(){apply(cur)});
+})();
+</script>
+</body>
+</html>

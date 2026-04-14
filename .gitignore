@@ -97,6 +97,7 @@ storage/
 # Claude / AI Notes
 # -----------------------------
 CLAUDE.md
+.claude/
 
 # -----------------------------
 # Local Config Overrides

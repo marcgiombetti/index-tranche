@@ -57,7 +57,7 @@ scrollCue = Découvrir
 
 # Graphique
 chartLabel = Données officielles STATEC
-chartH     = Évolution de l'<em>index</em> depuis 1999
+chartH     = Évolution de l'<em>index</em> depuis 2002
 chartDesc  = Cotes d'application successives de l'échelle mobile des salaires. Source : STATEC Luxembourg — statistiques.public.lu
 chartInfo  = Cotes d'application · base 1.1.1948 · Source : STATEC
 
@@ -179,7 +179,7 @@ scrollCue = Entdecken
 
 # Diagramm
 chartLabel = Offizielle STATEC-Daten
-chartH     = Entwicklung des <em>Index</em> seit 1999
+chartH     = Entwicklung des <em>Index</em> seit 2002
 chartDesc  = Aufeinanderfolgende Anwendungspunkte der gleitenden Lohnskala. Quelle: STATEC Luxemburg — statistiques.public.lu
 chartInfo  = Anwendungspunkte · Basis 1.1.1948 · Quelle: STATEC
 
@@ -301,7 +301,7 @@ scrollCue = Discover
 
 # Chart
 chartLabel = Official STATEC data
-chartH     = <em>Index</em> evolution since 1999
+chartH     = <em>Index</em> evolution since 2002
 chartDesc  = Successive application rates of the wage sliding scale. Source: STATEC Luxembourg — statistiques.public.lu
 chartInfo  = Application rates · base 01.01.1948 · Source: STATEC
 
@@ -423,7 +423,7 @@ scrollCue = Entdecken
 
 # Grafek
 chartLabel = Offiziell STATEC Donnéeën
-chartH     = Evolutioun vum <em>Index</em> zanter 1999
+chartH     = Evolutioun vum <em>Index</em> zanter 2002
 chartDesc  = Offiziell Uwëndungsquoten vun der gleitender Lounsskala. Quell: STATEC Lëtzebuerg — statistiques.public.lu
 chartInfo  = Uwëndungsquoten · Basis 1.1.1948 · Quell: STATEC
 

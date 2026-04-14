@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.indextranche.lu/</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.indextranche.lu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.indextranche.lu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.indextranche.lu/"/>
+    <xhtml:link rel="alternate" hreflang="lb" href="https://www.indextranche.lu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.indextranche.lu/"/>
+  </url>
+
+  <url>
+    <loc>https://www.indextranche.lu/blog/</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.indextranche.lu/blog/histoire-1921.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.indextranche.lu/blog/crise-2022.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.indextranche.lu/blog/controverses.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.indextranche.lu/blog/futur.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

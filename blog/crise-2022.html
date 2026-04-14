@@ -105,6 +105,12 @@
     <div class="hero-meta"><span>28 March 2026</span><span class="hero-meta-sep">·</span><span>10 min</span><span class="hero-meta-sep">·</span><span>Source: STATEC Luxembourg</span></div>
     <p class="hero-lead">Four tranches in seventeen months. The post-Covid energy price surge put the index under unprecedented pressure not seen since the 1970s, revealing both its strengths and limitations.</p>
   </div>
+    <div class="lang-block" data-lang="lb">
+    <div class="hero-cat"><span class="hero-cat-dot"></span>Kris</div>
+    <h1>2022–2023: Wéi d'<em>Inflatioun</em><br>alles ugedaan huet</h1>
+    <div class="hero-meta"><span>28. Mäerz 2026</span><span class="hero-meta-sep">·</span><span>10 Min.</span><span class="hero-meta-sep">·</span><span>Quell: STATEC Lëtzebuerg</span></div>
+    <p class="hero-lead">Véier Tranchen a siwwenzéng Méint. D'Post-Covid Energiepräisflambée huet den Index ënner en onprecedentéierten Drock gesaat, net méi gesin zanter den 1970er, a seng Stäerkten an Grenzen opgedeckt.</p>
+  </div>
   </div>
 </header>
 <article class="article">
@@ -174,8 +180,7 @@
   var cur=localStorage.getItem('ixLang')||'fr';
   function apply(l){
     cur=l; localStorage.setItem('ixLang',l);
-    var d=(l==='lb')?'fr':l;
-    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===d)});
+    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});
     document.querySelectorAll('.lbtn').forEach(function(b){var m=b.getAttribute('onclick')||'';b.classList.toggle('active',m.indexOf("'"+l+"'")>-1)});
     document.documentElement.lang=l;
   }

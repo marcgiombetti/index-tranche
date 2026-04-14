@@ -105,6 +105,12 @@
     <div class="hero-meta"><span>15 March 2026</span><span class="hero-meta-sep">·</span><span>8 min</span><span class="hero-meta-sep">·</span><span>Source: STATEC Luxembourg</span></div>
     <p class="hero-lead">In 1921, Luxembourg invented a system almost no other country has ever dared to adopt. A century later, the wage index has become the backbone of the Grand Duchy's social model — loved by some, criticised by others, but surviving everything.</p>
   </div>
+    <div class="lang-block" data-lang="lb">
+    <div class="hero-cat"><span class="hero-cat-dot"></span>Geschicht</div>
+    <h1>Geburt vun engem <em>eenzegaartegen</em><br>europäesche Mechanismus</h1>
+    <div class="hero-meta"><span>15. Mäerz 2026</span><span class="hero-meta-sep">·</span><span>8 Min.</span><span class="hero-meta-sep">·</span><span>Quell: STATEC Lëtzebuerg</span></div>
+    <p class="hero-lead">Am Joer 1921 huet Lëtzebuerg e System erfonnt deen kaum en anert Land jo gewaagt huet anzefoueren. Honnert Joer méi spéit ass den Lounindex d'Réckgrat vum lëtzebuergeschen Sozialmodell ginn — geliewt vun deenen een, kritiséiert vun deenen aneren, mä alles iwwerstanen.</p>
+  </div>
   </div>
 </header>
 <article class="article">
@@ -171,8 +177,7 @@
   var cur=localStorage.getItem('ixLang')||'fr';
   function apply(l){
     cur=l; localStorage.setItem('ixLang',l);
-    var d=(l==='lb')?'fr':l;
-    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===d)});
+    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});
     document.querySelectorAll('.lbtn').forEach(function(b){var m=b.getAttribute('onclick')||'';b.classList.toggle('active',m.indexOf("'"+l+"'")>-1)});
     document.documentElement.lang=l;
   }

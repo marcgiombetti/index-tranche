@@ -105,6 +105,12 @@
     <div class="hero-meta"><span>5 April 2026</span><span class="hero-meta-sep">·</span><span>12 min</span><span class="hero-meta-sep">·</span><span>Source: STATEC Luxembourg</span></div>
     <p class="hero-lead">Employers versus unions, IMF versus government, liberal economists versus defenders of the social model. A complete tour of the arguments for and against the index, from 1975 to today.</p>
   </div>
+    <div class="lang-block" data-lang="lb">
+    <div class="hero-cat"><span class="hero-cat-dot"></span>Debatt</div>
+    <h1>D'<em>Kontroversen</em>,<br>déi kee Enn huelen</h1>
+    <div class="hero-meta"><span>5. Abrëll 2026</span><span class="hero-meta-sep">·</span><span>12 Min.</span><span class="hero-meta-sep">·</span><span>Quell: STATEC Lëtzebuerg</span></div>
+    <p class="hero-lead">Patronat géint Gewerkschaften, IWF géint Regierung, liberal Ekonomisten géint Verdeedeger vum Sozialmodell. Eng komplett Iwwersiicht vun all den Argumenter fir an géint den Index, vun 1975 bis haut.</p>
+  </div>
   </div>
 </header>
 <article class="article">
@@ -171,8 +177,7 @@
   var cur=localStorage.getItem('ixLang')||'fr';
   function apply(l){
     cur=l; localStorage.setItem('ixLang',l);
-    var d=(l==='lb')?'fr':l;
-    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===d)});
+    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});
     document.querySelectorAll('.lbtn').forEach(function(b){var m=b.getAttribute('onclick')||'';b.classList.toggle('active',m.indexOf("'"+l+"'")>-1)});
     document.documentElement.lang=l;
   }

@@ -105,6 +105,12 @@
     <div class="hero-meta"><span>10 April 2026</span><span class="hero-meta-sep">·</span><span>9 min</span><span class="hero-meta-sep">·</span><span>Source: STATEC Luxembourg</span></div>
     <p class="hero-lead">AI, climate transition, European competitive pressure: can the Luxembourg index survive intact in a radically transformed economy? Scenarios and reform tracks.</p>
   </div>
+    <div class="lang-block" data-lang="lb">
+    <div class="hero-cat"><span class="hero-cat-dot"></span>Zukunft</div>
+    <h1>Den Index op dem Horizont <em>2030</em><br>an doriwwer eraus</h1>
+    <div class="hero-meta"><span>10. Abrëll 2026</span><span class="hero-meta-sep">·</span><span>9 Min.</span><span class="hero-meta-sep">·</span><span>Quell: STATEC Lëtzebuerg</span></div>
+    <p class="hero-lead">KI, Klimatransformatioun, europäesche Konkurrenzdreck: Kann den lëtzebuergeschen Index an enger radikal transforméierter Wirtschaft onverännert iwwerliewen? Szenarien a Reformpisten.</p>
+  </div>
   </div>
 </header>
 <article class="article">
@@ -159,8 +165,7 @@
   var cur=localStorage.getItem('ixLang')||'fr';
   function apply(l){
     cur=l; localStorage.setItem('ixLang',l);
-    var d=(l==='lb')?'fr':l;
-    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===d)});
+    document.querySelectorAll('.lang-block').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});
     document.querySelectorAll('.lbtn').forEach(function(b){var m=b.getAttribute('onclick')||'';b.classList.toggle('active',m.indexOf("'"+l+"'")>-1)});
     document.documentElement.lang=l;
   }

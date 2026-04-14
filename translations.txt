@@ -139,7 +139,7 @@ faqs.6.a = Seuls les éléments de rémunération explicitement indexés dans le
 # Pied de page
 footBrand = IndexTranche.lu
 footSrc   = Source officielle : STATEC Luxembourg · statistiques.public.lu
-footDis   = Outil informatif — données non contractuelles · © 2026
+footDis   = Outil informatif — données non contractuelles · Certaines pages créées avec le support de l'IA · © 2026
 
 # Utilitaires
 na     = n/d
@@ -261,7 +261,7 @@ faqs.6.a = Nur vertraglich oder tariflich explizit indexierte Vergütungselement
 # Fußzeile
 footBrand = IndexTranche.lu
 footSrc   = Offizielle Quelle: STATEC Luxemburg · statistiques.public.lu
-footDis   = Nur zu Informationszwecken — nicht rechtsverbindlich · © 2026
+footDis   = Nur zu Informationszwecken — nicht rechtsverbindlich · Einige Seiten mit KI-Unterstützung erstellt · © 2026
 
 # Hilfswerte
 na     = k.A.
@@ -383,7 +383,7 @@ faqs.6.a = Only remuneration elements explicitly indexed in the employment contr
 # Footer
 footBrand = IndexTranche.lu
 footSrc   = Official source: STATEC Luxembourg · statistiques.public.lu
-footDis   = Informational tool only — data not contractually binding · © 2026
+footDis   = Informational tool only — data not contractually binding · Some pages created with AI support · © 2026
 
 # Utilities
 na     = n/a
@@ -505,7 +505,7 @@ faqs.6.a = Nëmme vertraglech oder kollektivvertraglech explizit indexéiert Ver
 # Footer
 footBrand = IndexTranche.lu
 footSrc   = Offiziell Quell: STATEC Lëtzebuerg · statistiques.public.lu
-footDis   = Nëmme fir Informatiounszwecker — keng vertraglech Verbindlechkeet · © 2026
+footDis   = Nëmme fir Informatiounszwecker — keng vertraglech Verbindlechkeet · E puer Säite mat KI-Ënnerstëtzung erstallt · © 2026
 
 # Utility-Wäerter
 na     = n/b

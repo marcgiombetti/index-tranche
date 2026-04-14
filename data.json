@@ -5,7 +5,7 @@
     "base": "Base 100 = 1er janvier 1948",
     "increment": "2.5% par tranche",
     "lastUpdated": "2026-04-14",
-    "note": "Les cotes antérieures à 1975 correspondent à la période pré-généralisation (fonctionnaires et CFL uniquement). Données reconstituées d'après publications STATEC, IGSS et CSL. Les cotes 1948-1971 utilisaient un seuil de 5% avant la réforme de 1972 qui l'a abaissé à 2.5%."
+    "note": "Les cotes antérieures à 1975 correspondent à la période pré-généralisation (fonctionnaires et CFL uniquement). Données reconstituées d'après publications STATEC, IGSS et CSL. Les cotes 1948–1972 utilisaient un seuil de 5% (loi du 22 décembre 1972, en vigueur au 01.01.1973, abaissant le seuil à 2,5%). Les entrées du 01.01.2011 et du 01.01.2025 correspondent à des ajustements légaux du SSM sans changement de cote d'application — ce ne sont pas des tranches d'indexation."
   },
   "currentStatus": {
     "coteApplication": 968.04,
@@ -16,18 +16,19 @@
   },
   "tranches": [
     { "date": "2025-05-01", "app": 968.04, "ech": 1013.51, "smw": 2703.74, "smwq": 3244.48 },
-    { "date": "2025-01-01", "app": 944.43, "ech": 988.79,  "smw": 2637.79, "smwq": 3165.35 },
-    { "date": "2023-09-01", "app": 944.43, "ech": 988.75,  "smw": 2570.93, "smwq": 3085.11 },
+    { "date": "2025-01-01", "app": 944.43, "ech": 988.79,  "smw": 2637.79, "smwq": 3165.35, "note": "Ajustement légal du SSM au 1er janvier 2025 — cote d'application inchangée. Non une tranche d'indexation." },
+    { "date": "2023-09-01", "app": 944.43, "ech": 988.79,  "smw": 2570.93, "smwq": 3085.11 },
     { "date": "2023-04-01", "app": 921.40, "ech": 964.67,  "smw": 2508.24, "smwq": 3009.88 },
     { "date": "2023-02-01", "app": 898.93, "ech": 941.14,  "smw": 2447.07, "smwq": 2936.48 },
     { "date": "2022-04-01", "app": 877.01, "ech": 918.20,  "smw": 2313.38, "smwq": 2776.05 },
     { "date": "2021-10-01", "app": 855.62, "ech": 895.78,  "smw": 2256.95, "smwq": 2708.35 },
+    { "date": "2020-01-01", "app": 834.76, "ech": 873.95,  "smw": 2141.99, "smwq": 2570.39 },
     { "date": "2018-08-01", "app": 814.40, "ech": 852.63,  "smw": 2048.54, "smwq": 2458.25 },
     { "date": "2017-01-01", "app": 794.54, "ech": 831.84,  "smw": 1998.59, "smwq": 2398.30 },
     { "date": "2013-10-01", "app": 775.17, "ech": 811.56,  "smw": 1921.03, "smwq": 2305.23 },
     { "date": "2012-10-01", "app": 756.27, "ech": 791.77,  "smw": 1846.51, "smwq": 2215.81 },
     { "date": "2011-10-01", "app": 737.83, "ech": 772.46,  "smw": 1801.49, "smwq": 2161.78 },
-    { "date": "2011-01-01", "app": 719.84, "ech": 753.62,  "smw": 1757.56, "smwq": 2109.07 },
+    { "date": "2011-01-01", "app": 719.84, "ech": 753.62,  "smw": 1757.56, "smwq": 2109.07, "note": "Ajustement légal du SSM au 1er janvier 2011 — cote d'application inchangée. Non une tranche d'indexation." },
     { "date": "2010-07-01", "app": 719.84, "ech": 753.62,  "smw": 1724.81, "smwq": 2069.77 },
     { "date": "2009-03-01", "app": 702.29, "ech": 735.24,  "smw": 1682.76, "smwq": 2019.31 },
     { "date": "2008-03-01", "app": 685.17, "ech": 717.31,  "smw": 1609.53, "smwq": 1931.44 },
